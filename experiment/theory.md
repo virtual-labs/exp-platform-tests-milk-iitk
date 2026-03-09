@@ -1,1 +1,6 @@
-### Link your theory in here
+Platform tests or milk reception tests are the commonly used names for the tests carried out by the persons responsible for raw milk collection and/or reception. The tests in question are rapid quality control tests - organoleptic tests being of crucial importance - whereby the milks of inferior or questionable quality can be screened out before the milk leaves its original container and is mixed with bulk milk during milk collection and/or reception. This is of crucial importance from the point of view of processing and quality of end products, because one single lot of milk of poor quality can spoil the rest of the milk it is mixed with. <br>
+Clot on boiling test is quick and simple. This test check the quality of milk in terms of too acid milk (pH<5.8) or abnormal milk (e.g. colostral or mastitis milk). If milk showed clotting on boiling, the milk must contain many acids or rennet producing microrganisms or the milk has an abnormal high percentage of proteins like colostral milk. Such milk cannot stand the heat treatment in milk processing and must therefore be rejected.<br>
+Methylene Blue Reduction Test (MBRT) is used to assess the bacteriological quality of milk by determination of the time taken for the reduction of methylene blue in milk indicated by its colour change.
+Quality criteria of milk in MBRT test <br>
+Here is the converted table from the image:<br>
+<image src="images\image_1.png"><br>

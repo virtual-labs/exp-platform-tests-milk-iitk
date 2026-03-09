@@ -2,32 +2,83 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The Clot on Boiling (COB) test is mainly used to detect:?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Fat content in milk",
+        "b": "High acidity or abnormal milk",
+        "c": "Sugar content",
+        "d": "Added water"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Milk showing clot formation during COB test indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Good quality milk",
+        "b": "Low bacterial count",
+        "c": "High acidity (pH < 5.8)",
+        "d": "High fat content"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Methylene Blue Reduction Test (MBRT) is used to assess:",
+      "answers": {
+        "a": "Fat percentage",
+        "b": "Protein quality",
+        "c": "Bacteriological quality of milk",
+        "d": "Mineral content"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In MBRT, milk is incubated at:",
+      "answers": {
+        "a": "10°C",
+        "b": "25°C",
+        "c": "37°C",
+        "d": "60°C"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Faster decolorization of methylene blue indicates:",
+      "answers": {
+        "a": "Good quality milk",
+        "b": "Low bacterial count",
+        "c": "High bacterial activity",
+        "d": "Absence of microorganisms"
+      },
+      "explanations": {
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
