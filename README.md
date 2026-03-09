@@ -20,9 +20,9 @@ In this experiment, platform tests of milk—Clot-on-Boiling (COB) and Methylene
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | Prof. Vivek Kumar | Faculty | . | Harcourt Butler Technical University, Kanpur | viveksachan99@gmail.com
-2 | Anjali Srivastava | Faculty | . | Institute of Engineering & Technology, Bundelkhand University, Jhansi | fetbujhansi@gmail.com
-3 | Dr. Anupam Vyas | Faculty | . | Institute of Engineering & Technology, Bundelkhand University, Jhansi | viveksachan99@gmail.com
-4 | Dr. Sanjeev Kumar Shrivastava | Faculty | . | Bundelkhand University, Jhansi | sksphys7@gmail.com
-5 | Sanidhya Shukla | Student | . | Institute of Engineering & Technology, Bundelkhand University, Jhansi | sanidhyashukla46@gmail.com
+1 | Prof. Vivek Kumar | Faculty | Food Technology | Harcourt Butler Technical University, Kanpur | viveksachan99@gmail.com
+2 | Anjali Srivastava | Faculty | Food Technology | Institute of Engineering & Technology, Bundelkhand University, Jhansi | fetbujhansi@gmail.com
+3 | Dr. Anupam Vyas | Faculty |Electronics & Communication Engineering| Institute of Engineering & Technology, Bundelkhand University, Jhansi | viveksachan99@gmail.com
+4 | Dr. Sanjeev Kumar Shrivastava | Faculty | Physics| Bundelkhand University, Jhansi | sksphys7@gmail.com
+5 | Sanidhya Shukla | Student | Computer Science & Engineering | Institute of Engineering & Technology, Bundelkhand University, Jhansi | sanidhyashukla46@gmail.com
 
