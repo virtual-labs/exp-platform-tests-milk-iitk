@@ -3,3 +3,4 @@ Clot on boiling test is quick and simple. This test check the quality of milk in
 Methylene Blue Reduction Test (MBRT) is used to assess the bacteriological quality of milk by determination of the time taken for the reduction of methylene blue in milk indicated by its colour change.
 Quality criteria of milk in MBRT test 
 Here is the converted table from the image:
+<image src="images\image_1.png"><br>
