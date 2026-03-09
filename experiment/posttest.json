@@ -2,15 +2,15 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "If milk does not clot in COB test, it indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Negative result (acceptable milk)",
+        "b": "High acidity",
+        "c": "Mastitis milk",
+        "d": "Colostral milk"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -19,15 +19,66 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "A reduction time of more than 5 hours in MBRT indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Very bad quality milk",
+        "b": "Bad quality milk",
+        "c": "Fair quality milk",
+        "d": "Good quality milk"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "MBRT works on the principle of:",
+      "answers": {
+        "a": "Oxidation of fat",
+        "b": "Reduction of dye by bacterial activity",
+        "c": "Heat coagulation",
+        "d": "Protein precipitation"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Shorter MBRT time corresponds to:",
+      "answers": {
+        "a": "Lower bacterial count",
+        "b": "Better keeping quality",
+        "c": "Higher bacterial count",
+        "d": "Higher fat percentage"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Platform tests are conducted mainly to:",
+      "answers": {
+        "a": "Increase milk price",
+        "b": "Improve color of milk",
+        "c": "Screen inferior quality milk before bulk mixing",
+        "d": "Increase shelf life artificially"
+      },
+      "explanations": {
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
