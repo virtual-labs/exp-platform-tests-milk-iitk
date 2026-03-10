@@ -1,0 +1,5049 @@
+/* Mobile devices (landscape only) */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    /* styles here */
+
+
+}
+
+
+@font-face {
+    font-family: digital;
+    src:url('../fonts/digital-7-webfont.woff2') format('woff2'),
+        url('../fonts/digital-7-webfont.woff') format('woff'),
+        url("../fonts/digital-7.ttf") format('truetype');
+  } 
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 98vmax;
+    height: 1vmax; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgb(170, 165, 121);
+    font: normal;
+   
+}
+
+.main{
+    height: 45.8vmax;
+    width: 100vmax;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    border: 1px solid black;
+    background-color: rgb(148, 198, 255);
+    height: 3vmax;
+    width: 100vmax; 
+    position: absolute;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+}
+
+#ins{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+#text{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: rgb(0, 4, 255);
+    /* padding: 1%; */
+}
+
+.footer{
+    position: absolute;
+    align-items: center;
+    top: 3vmax;
+    height: 42.8vmax;
+    width: 100%;
+    background-color: rgb(226, 239, 33);
+    
+}
+
+#experiment{
+    /* top: 8%; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: blueviolet;
+    /* border: 1px solid black; */
+    /* visibility: hidden; */
+}
+
+
+#start{
+    position:absolute;
+    border-radius: 100%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 90%;
+    top: 90%;
+    border: none;
+    background-color: rgb(0, 244, 16);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: blinking;
+    animation-duration: 1s infinite ;
+    z-index: 1000; 
+}
+
+#inferenceBtn_mbrt{
+    position:absolute;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 15%;
+    top: 49.8%;
+    border: none;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: blinking;
+    animation-duration: 1s infinite ; 
+    visibility: visible;
+    display: none;
+}
+
+/* MBRT Inference Box */
+.inference_mbrt {
+  position: absolute;
+  top: 21vw;
+  left: 48.4%;
+  transform: translateX(-50%);
+
+  width: 85vw;
+  max-width: 69.5vw;
+
+  background: #ffffff;
+  border: 0.25vw solid #000;
+  border-radius: 0.6vw;
+
+   max-height: 20vw;     /* 👈 LIMIT LENGTH */
+  overflow-y: auto;     /* 👈 scroll only if needed */
+
+  padding: 1.5vw 2vw;
+  font-family: serif;
+  font-size: 1.05vw;
+  line-height: 1.6;
+
+  box-shadow: 0 0.6vw 1.2vw rgba(0, 0, 0, 0.25);
+
+  z-index: 1200;
+  display: none;
+}
+
+/* Heading */
+.inference_mbrt h3 {
+  margin-top: 0;
+  margin-bottom: 1vw;
+  font-size: 1.4vw;
+  text-align: left;
+  border-bottom: 0.15vw solid black;
+  padding-bottom: 0.5vw;
+}
+
+/* Ordered list */
+.inference_mbrt ol {
+  margin: 0;
+  padding-left: 1.6vw;
+}
+
+/* List items */
+.inference_mbrt li {
+  margin-bottom: 0.7vw;
+}
+
+/* Smooth appearance animation */
+.inference_mbrt.show {
+  display: block;
+  animation: fadeInScale 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+
+
+
+.table-container_mbrt {
+  position: absolute;
+  top: 1vw;
+  left: 48%;
+  transform: translateX(-50%);
+
+  width: 90vw;
+  max-width: 68.75vw;
+
+  background: white;
+  padding: 0.94vw;
+
+  border: 0.19vw solid black;
+  border-radius: 0.5vw;
+
+  z-index: 1;
+
+ 
+}
+
+/* table styles ONLY for MBRT */
+.table-container_mbrt table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* table cells */
+.table-container_mbrt th,
+.table-container_mbrt td {
+  border: 0.125vw solid black;
+  padding: 0.63vw;
+  font-size: 1vw;
+}
+
+/* table header */
+.table-container_mbrt th {
+  background-color: black;
+  color: white;
+  font-size: 1.05vw;
+}
+
+/* visible rows/cells inside MBRT */
+.table-container_mbrt .hidden {
+  visibility: visible;
+}
+
+
+/*  */
+
+
+
+#homeBtn{
+    position:absolute;
+    border-radius: 100%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 90%;
+    top: 90%;
+    border: none;
+    background-color: rgb(0, 244, 16);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: blinking;
+    animation-duration: 1s infinite ; 
+    visibility: hidden;
+}
+
+
+
+#start:active{
+    scale: 0.9;
+    transition: all ease 0.2s;
+}
+
+
+
+/* #hindi{
+    position:absolute;
+    border-radius: 20%;
+    padding: 1%;
+    font-size: 1.5vh;
+    left: 45%;
+    top: 50%;
+    border: none;
+    background-color: rgb(226, 239, 33);
+    box-shadow: 2px 2px 0px 1px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#hindi:active{
+    scale: 0.9;
+}
+
+#eng{
+    position:absolute;
+    border-radius: 20%;
+    padding: 1%;
+    font-size: 1.5vh;
+    left: 55%;
+    top: 50%;
+    border: none;
+    background-color: rgb(226, 239, 33);
+    box-shadow: 2px 2px 0px 1px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#eng:active{
+    scale: 0.9;
+}
+
+#lselector{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2vh;
+    color: white;
+    left: 45.2%;
+    top: 40%;
+}
+
+#langselector{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    transition: all;
+    transition-duration: 1s;
+    aspect-ratio: 16/9;
+    visibility: hidden;
+}
+
+#reading{
+    width: 5.7%;
+    height: 4.5%;
+    top: 64.5%;
+    left: 9.2%;
+    position: absolute;
+    text-align: center;
+}
+
+#change{
+    margin-top: 3%;
+    opacity: 0%;
+    color: red;
+    transition: all;
+    transition-duration: 1s;
+    font-family: digital;
+    font-weight: 100;
+    font-size: 2.4vh;
+} */
+
+
+
+
+
+/* ******************************************       Equipments   ************************************** */
+
+#startinglab{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    visibility: visible;    
+
+}
+
+#workingtable{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: visible;
+    z-index: 0;
+
+}
+
+.dessicatorlid{
+    position: absolute;
+    height: 11%;
+    width: 10%;
+    top: 83%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+.dessicatorbase{
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    top: 70%;
+}
+
+#lid{
+    left: 83%;
+    /* visibility: hidden; */
+}
+
+#base{
+    left: 85%;
+}
+
+#lid1{
+    left: 71%;
+    /* visibility: hidden; */
+}
+
+#base1{
+    left: 73%;
+}
+
+#lid2{
+    /* visibility: hidden; */
+    left: 59%;
+}
+
+#base2{
+    left: 61%;
+}
+
+#lid3{
+    left: 47%;
+    /* visibility: hidden; */
+}
+
+#base3{
+    left: 49%;
+}
+
+#lid4{
+    left: 35%;
+    /* visibility: hidden; */
+}
+
+#base4{
+    left: 37%;
+}
+
+#mcylinder{
+    position: absolute;
+    height: 30%;
+    width: 5%;
+    top: 60%;
+    left: 8%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#m100{
+    position: absolute;
+    height: 30%;
+    width: 5%;
+    top: 60%;
+    left: 8%;
+    transition: all;
+    /* transition-duration: 1s; */
+    visibility: hidden;
+}
+
+#msolution{
+    position: absolute;
+    height: 0%;
+    width: 2.78%;
+    /* top: 62%; */
+    bottom: 11%;
+    left: 9.1%;
+    transition: all;
+    transition-duration: 1s;
+    /* animation-fill-mode:forwards; */
+    /* left:34%;
+    bottom: 47.2%;
+    rotate: 25deg; */
+
+
+
+
+}
+
+#ms{
+    position: absolute;
+    height: 31%;
+    width: 0.3%;
+    top: 55%;
+    left: 10.7%;
+    transition: all;
+    /* transition-duration: 1s; */
+    visibility: hidden;
+    /* left: 39.2%;
+    height: 55%;
+    top: 27.5%; */
+}
+
+#butyrometer_liquid{
+    position: absolute;
+    height: 0%;
+    width: 1.9%;
+    bottom: 12.8%;
+    left: 73.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 2;
+    opacity: 100%;
+    transform-origin: bottom; 
+   transform: scaleY(0);
+  transition: transform 1s ease-in-out;
+  
+}
+#white_milk{
+    position: absolute;
+    height: 23.5%;
+    width: 0.3%;
+    top: 60%;
+    left: 74.3%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 0%;
+    transform-origin: bottom;
+
+}
+#yellow_black{
+    position: absolute;
+     height: 25%;
+    width: 1.9%;
+    bottom: 11.9%;
+    left: 73.5%;
+    transition: all;
+    transition-duration: 3s;
+    z-index: 1;
+    opacity: 0%;
+    transform-origin: bottom;
+}
+#brown_butyrometer_sol{
+    position: absolute;
+    height: 25%;
+    width: 2.1%;
+    bottom: 11.9%;
+    left: 73.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 3;
+    opacity: 0%;
+    transform-origin: bottom;
+    
+    
+    
+       /* left : 44.5%;  */
+
+  
+
+
+       
+
+
+   
+    
+}
+#brown_butyrometer_sol1{
+    position: absolute;
+    height: 39%;
+    width: 2.8%;
+    bottom: 11.9%;
+    left: 73.0%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+    transform-origin: bottom;
+    visibility: hidden;
+    
+    
+       /* left : 44.5%;  */
+
+       
+      /* height: 20.656%;
+width: 1.5112%;
+bottom: 12.664%;
+left: 36.792%; */
+
+
+   
+}
+#tiltedsol{
+    position: absolute;
+    height: 36%;
+    width: 2.84%;
+    bottom: 12.9%;
+    left: 44.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 0%;
+    transform-origin: bottom;
+    
+
+       
+       
+
+
+    bottom: 42.3%;
+}
+
+#tiltedsol1{
+    position: absolute;
+    height: 36%;
+    width: 2.84%;
+    bottom: 12.9%;
+    left: 44.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 0%;
+    transform-origin: bottom;
+    
+
+       
+       
+
+
+    bottom: 42.3%;
+}
+#butyrometer_cork{
+     position: absolute;
+    height: 6%;
+    width: 2.40%;
+        bottom:  11.10%;
+                 left: 55.0%;
+    transition: all;
+    transition:  1s;
+    z-index: 1;
+    opacity: 100%;
+    
+    /* z-index: 25; */
+    
+    
+    
+
+
+    /* transition: transform 1s ease */
+    
+    /* transform : translate(0%, -850%);
+    transform : translate(767%, -850%);
+    transform : translate(767%, -725%);
+    /* transform : translate(-190%, -90%) ;
+    transform : translate(-115%, -60%);
+    transform : translate(0%, -850%); */
+    
+    /* bottom : 54%;
+  
+    left:25.4% ;
+    bottom: 40.4%;
+    transform : translate(-130%, -60%) rotate(180deg);
+    translate: (30%,40%) rotate(90deg); */ 
+   
+    
+}
+#butyrometer_cork1{
+     position: absolute;
+    height: 6%;
+    width: 2.51%;
+        bottom: 54.5%;
+                 left: 73.3%;
+    transition: all;
+    transition:  1s;
+    z-index: 0;
+    opacity: 100%;
+    visibility: hidden;
+    z-index: 0;
+
+    /* width: 1.9%;      */
+  
+}
+
+#butyrometer_stp1{
+    position: absolute;
+    height: 70%;
+    width: 15%;
+
+    left: 50%;
+    z-index: 20;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+    bottom: 30%;
+   
+    
+   
+    /* transform: translate(0%, -90%);
+    transform: translate(-190%, -90%);
+    
+    transform: translate(-190%, -60%);
+    transform: translate(-115%, -60%) rotate(180d
+    bottom :50%; */
+
+ 
+    
+    
+
+
+} 
+
+#butyrometer_a{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+ height: 45%;
+    left: 69.47%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    display: none;
+} 
+
+#test_tube_a_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+ height: 45%;
+    left: 69.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+} 
+
+#test_tube_e_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 83%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_b_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 20.51%;
+    height: 45%;
+    left: 78.2%;
+    z-index: 17;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+    display: block;
+} 
+
+#butyrometer_b{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 73.2%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    display: none;
+} 
+
+
+
+#test_tube_b_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 73.2%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+
+
+
+
+
+
+
+#test_tube_a_2{
+    position: absolute;  
+   bottom: 11.8%;
+    height: 49%;
+    width: 2.4%;
+    height: 40%;
+    left: 74.3%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_mbrt_a{
+    position: absolute;  
+   bottom: 11.8%;
+   width: 2.2%;
+    height: 49%;
+    width: 2.4%;
+    height: 40%;
+    left: 74.3%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+
+
+
+
+#test_tube_b_3{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.2%;
+    height: 40%;
+    left: 69.77%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 0%;
+    visibility: visible;
+} 
+
+
+#test_tube_b_2  {
+    position: absolute;  
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 77.77%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_mbrt_b {
+    position: absolute;  
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 77.77%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+
+
+
+
+
+
+#test_tube_d_2  {
+    position: absolute;  
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 81%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+
+#butyrometer_c{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 76.8%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    display: none;
+} 
+
+#test_tube_c_cob{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 45%;
+    left: 76.76%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+    display: block;
+} 
+
+#test_tube_c{
+    position: absolute; 
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 81.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+    display: block;
+} 
+
+#test_tube_mbrt_c {
+      position: absolute; 
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 40%;
+    left: 81.4%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+#butyrometer_d{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 45%;
+    left: 80.40%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+   display: none;
+} 
+
+#test_tube_d_cob{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 45%;
+    left: 80.5%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+#test_tube_d{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.4%;
+    height: 40%;
+    left: 85%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+} 
+
+#test_tube_mbrt_d{
+    position: absolute;
+   bottom: 11.8%;
+    width: 2.51%;
+    height: 40%;
+    left: 85%;
+    z-index: 18;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: visible;
+} 
+
+#butyrometer_cork_centrifuge{
+     position: absolute;
+    height: 6%;
+    width: 2.51%;
+        bottom:  11.0%;
+                 left: 54.0%;
+    transition: all;
+    transition:  1s;
+    z-index: 1;
+    opacity: 100%;
+
+    
+    /* z-index: 25; */
+    
+    
+    
+
+
+    /* transition: transform 1s ease */
+    
+    /* transform : translate(0%, -850%);
+    transform : translate(767%, -850%);
+    transform : translate(767%, -725%);
+    /* transform : translate(-190%, -90%) ;
+    transform : translate(-115%, -60%);
+    transform : translate(0%, -850%); */
+    
+    /* bottom : 54%;
+  
+    left:25.4% ;
+    bottom: 40.4%;
+    transform : translate(-130%, -60%) rotate(180deg);
+    translate: (30%,40%) rotate(90deg); */ 
+}
+
+
+#butyrometer_centrifuge{
+    position: absolute;
+ 
+    z-index: 20;
+   
+    opacity: 100%;
+    
+   
+    /* transform: translate(0%, -90%);
+    transform: translate(-190%, -90%);
+    
+    transform: translate(-190%, -60%);
+    transform: translate(-115%, -60%) rotate(180deg);
+    bottom :50%; */
+
+    bottom: 11.8%;
+    width: 3.0%;
+    height: 48%;
+    left: 80.2%;
+    
+    
+
+
+} 
+#water_butyrometer_centrifuge{
+    position: absolute;
+   
+    z-index: 22;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+   visibility: hidden;
+    
+   
+  
+
+    bottom: 11.9%;
+    width: 3.2%;
+    height: 50%;
+    left: 80.10%;
+    
+  
+
+
+} 
+#butyrometer1{
+    position: absolute;
+    height: 48%;
+    width: 3.5%;
+    bottom: 12%;
+    left: 61.37%;
+    z-index: 10;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+    visibility: hidden;
+ 
+
+}
+
+ #straight_butyrometer{
+    position: absolute;
+    height: 50%;
+    width: 3.1%;
+    bottom: 12%;
+    left: 72.89%;
+    z-index: 20;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+ }
+ #straight_butyrometer_amyl{
+    position: absolute;
+  bottom: 12.0%;
+    width: 3.0%;
+    height: 50%;
+    left: 72.97%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 0s;
+    opacity: 100%;
+    visibility: hidden;
+
+ }
+
+  #tilted_butyrometer{
+    position: absolute;
+    height: 500%;
+    width: 30.1%;
+    bottom: 58%;
+    left: 110.89%;
+ 
+    opacity: 100%;
+    visibility: visible;
+    z-index: 40;
+  }
+
+/* 
+    #tilted_butyrometer_amyl{
+
+    height: 90%;
+    width: 50.1%;
+    bottom: 10%;
+    left: 50.89%;
+    opacity: 100%;
+    z-index: 40;
+  } */
+
+  #finalfatsolution{
+  position: absolute;
+    height: 30.0%;
+    width: 2.0%;
+    bottom: 10.1%;
+    left: 72.2%;
+ 
+    opacity: 100%;
+  
+    z-index: 20;
+      visibility: hidden;
+      transition: 1s;
+  }
+
+    #tilted_butyrometer1{
+    position: absolute;
+    height: 30.1%;
+    width: 2.0%;
+    bottom: 44.82%;
+    left: 72.21%;
+ 
+    opacity: 100%;
+  
+    z-index: 20;
+      visibility: hidden;
+      transition: 1s;
+  }
+
+    /* height: 28.2%;
+width: 10.5%;
+left: 48.7%;
+bottom: 5%; */
+    
+    /* transform: translateX(-50%);
+  transition: bottom 2s ease; */
+    /* transform: translate(0%, -90%);
+    transform: translate(-190%, -90%);
+    
+    transform: translate(-190%, -60%);
+    transform: translate(-115%, -60%) rotate(180deg);
+    bottom :50%; */
+    
+    #tilted_butyrometer{
+    position: absolute;
+    height: 30%;
+    width: 1.9%;
+    bottom: 45%;
+    left: 21.38%;
+    z-index: 5;
+  
+    opacity: 100%;
+    visibility: hidden;
+   z-index: 20;
+   transition: all;
+   transition: 1s;
+  }
+
+     #tilted_butyrometer_amyl{
+    position: absolute;
+    height: 50%;
+    width: 3.1%;
+    bottom: 35%;
+    left: 46.95%;
+    z-index: 5;
+  
+    opacity: 100%;
+   z-index: 20;
+   transition: all;
+   transition: 0s;
+   visibility: hidden;
+  }
+
+
+#butyrometer_upper1{
+    position: absolute;
+    height: 20%;
+    width: 29.7%;
+    top: 60.0%;
+    left: 60.43%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 24;
+}
+
+#butyrometer_upper2{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    top: 69.82%;
+    left: 60.43%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+
+  }
+
+#butyrometer_upper221{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    top: 69.82%;
+    left: 68.49%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+
+  }
+  
+#butyrometer_upper21{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    bottom: 20%;
+    left: 68.58%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+}
+
+#butyrometer_upper222{
+    position: absolute;
+    height: 20%;
+    width: 29.4%;
+    bottom: 20%;
+    left: 68.58%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+ 
+}
+#butyrometer_back{
+    position: absolute;
+    height: 35%;
+    width: 30%;
+    top: 60%;
+    left: 61.27%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+}
+
+#butyrometer_back2{
+    position: absolute;
+    height: 35%;
+    width: 30%;
+    top: 60%;
+    left: 69.27%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+}
+
+#milk_sample_a_50ml{
+    position: absolute;
+    height: 16%;
+    width: 8.35%;
+    bottom: 9.8%;
+    left: 6.45%;
+   
+    z-index: 2;
+    transition: height 1s linear;
+    opacity: 100%;
+}
+
+#milk_sample_b_50ml{
+    position: absolute;
+    height: 16%;
+    width: 8.35%;
+    bottom: 10%;
+    left: 17.60%;
+   
+    z-index: 2;
+    transition: height 1s linear;
+    opacity: 100%;
+}
+
+#milk_sample_c_50ml{
+    position: absolute;
+     height: 16%;
+    width: 8.35%;
+    bottom: 10%;
+    left: 28.55%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    transition: height 1s linear;
+}
+
+#milk_sample_d_50ml{
+    position: absolute;
+      height: 16%;
+    width: 8.37%;
+    bottom : 10%;
+    left: 40.6%;
+    transition: all;
+    z-index: 1;
+    transition: height 1s linear;
+}
+
+#milk_beaker_a_50ml{
+    position: absolute;
+   height: 20%;
+    width: 10%;
+    top: 70%;
+    left: 5.25%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 9;
+    transition: transform 1s ease-in-out;
+    opacity: 100%;
+}
+
+
+#milk_beaker_a_2_50ml{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 68%;
+    left: 2.8%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 15;
+    transition:  height 2s linear;
+    opacity: 100%;
+}
+
+#milk_beaker_c_2_50ml{
+  position: absolute;
+  height: 20%;
+  width: 10%;
+  top: 68%;
+  left: 24.27%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 15;
+  transition:  height 2s linear;
+  opacity: 100%;
+}
+
+#milk_beaker_d_2_50ml{
+  position: absolute;
+  height: 20%;
+  width: 10%;
+  top: 68%;
+  left: 35.27%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 15;
+  transition:  height 2s linear;
+  opacity: 100%;
+}
+
+
+#milk_beaker_b_50ml{
+    position: absolute;
+    height: 20.7%;
+    width: 10%;
+    top: 69.4%;
+    left: 16.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    transition:  height 2s linear;
+    opacity: 100%;
+}
+
+
+#milk_a_2_50ml{
+    position: absolute;
+    height: 15.9%;
+    width: 8.3%;
+    bottom: 12%;
+    left: 4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 14;
+    transition: all 1s;
+    opacity: 100%;
+}
+
+
+#milk_b_2_50ml{
+    position: absolute;
+    height: 15.9%;
+    width: 8.4%;
+    bottom: 12%;
+    left: 14.38%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 10;
+    transition: height 1s linear;
+    opacity: 100%;
+}
+
+#milk_c_2_50ml{
+  position: absolute;
+  height: 15.9%;
+  width: 8.4%;
+  bottom: 12%;
+  left: 25.38%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 10;
+  transition: height 1s linear;
+  opacity: 100%;
+}
+
+#milk_d_2_50ml{
+  position: absolute;
+  height: 15.9%;
+  width: 8.4%;
+  bottom: 12%;
+  left: 36.38%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 10;
+  transition: height 1s linear;
+  opacity: 100%;
+}
+
+
+
+
+
+
+#milk_beaker_b_2_50ml{
+    position: absolute;
+    height: 20.4%;
+    width: 10%;
+    top: 67.4%;
+    left: 13.27%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 13;
+    opacity: 100%;
+}
+
+
+
+
+
+#milk_beaker_c_50ml{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 70%;
+    left: 27.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+}
+
+
+
+
+#milk_beaker_d_50ml{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    top: 70%;
+    left: 39.52%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 30;
+}
+
+#butyrometer_with_stand{
+    position: absolute;
+    height: 55%;
+    width: 25%;
+    top: 41%;
+    left: 61%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#water-solution{
+    position: absolute;
+    height: 20%;
+    width: 0.3%;
+    top: 63.8%;
+    left: 74.3%;
+    transition: all;
+    z-index: 2;
+    transition-duration: 1s;
+    opacity: 0%;  
+}
+
+
+#dwatersol{
+    position: absolute;
+    height: 21.8%;
+    width: 6.5%;
+    /* top: 68%; */
+    bottom: 10.2%;
+    left: 28.5%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+
+
+
+#waterBath_lower {
+  position: absolute;
+  width: 26.48%;
+  height: 30.4%;
+  bottom: 7.9%;  /* 11 + (33 - 26.4)/2 = 13.82 */
+  left: 55.5%;     /* 6 + (30.6 - 24.48)/2 = 8.31 */
+  overflow: hidden;
+  z-index: 21;
+  visibility: visible;
+  opacity: 100%;
+}
+
+#waterBath_upper {
+  position: absolute;
+  width: 25.10%;
+  height: 3.3%;
+  bottom: 35.1%; /* 100% - top: 6.5% - height: 39% */
+  left: 55.60%;
+   overflow: hidden;
+   z-index: 19;
+}
+
+
+
+
+/*                ----------             Water bath Heat       ----             1st     */
+
+#waterBath_lower3 {
+  position: absolute;
+  width: 26.48%;
+  height: 30.4%;
+  bottom: 7.9%;  /* 11 + (33 - 26.4)/2 = 13.82 */
+  left: 9.5%;     /* 6 + (30.6 - 24.48)/2 = 8.31 */
+  overflow: hidden;
+  z-index: 21;
+}
+#waterBath_lower2 {
+  position: absolute;
+  width: 26.48%;
+  height: 30.4%;
+  bottom: 7.9%;  /* 11 + (33 - 26.4)/2 = 13.82 */
+  left: 9.5%;     /* 6 + (30.6 - 24.48)/2 = 8.31 */
+  overflow: hidden;
+  z-index: 21;
+}
+
+#waterBath_upper3 {
+  position: absolute;
+  width: 25.10%;
+  height: 3.3%;
+  bottom: 35.1%; /* 100% - top: 6.5% - height: 39% */
+  left: 9.60%;
+   overflow: hidden;
+   z-index: 17;
+}
+
+#yellow_milk_tube_b{
+  position: absolute;
+  width: 1.45%;
+  height: 23.50%;
+  bottom: 18%; /* 100% - top: 6.5% - height: 39% */
+  left: 18%;
+   overflow: hidden;
+   z-index: 17;
+   visibility: hidden;
+   transition: 1s all;
+}
+
+#yellow_milk_tube_d{
+  position: absolute;
+  width: 1.45%;
+  height: 23.50%;
+  bottom: 18%; /* 100% - top: 6.5% - height: 39% */
+  left: 26.5%;
+   overflow: hidden;
+   z-index: 17;
+   visibility: hidden;
+   transition: 1s all;
+}
+
+
+
+#waterBath_upper2 {
+  position: absolute;
+  width: 25.10%;
+  height: 3.3%;
+  bottom: 35.1%; /* 100% - top: 6.5% - height: 39% */
+  left: 9.60%;
+   overflow: hidden;
+   z-index: 19;
+}
+
+#onSwitchHolder3 {
+  position: absolute;
+  width: 2.4%;
+  height: 5.2%;
+  bottom: 10%;
+  left: 14%;
+   z-index: 22;  
+}
+
+#onSwitchHolder2 {
+  position: absolute;
+  width: 2.4%;
+  height: 5.2%;
+  bottom: 10%;
+  left: 14%;
+   z-index: 22;  
+}
+
+
+#setOff3 {
+   position: absolute;
+  width: 1.7%;
+  height: 1.4%;
+  bottom: 12.85%;
+  left: 19.00%;
+  z-index: 25;
+}
+
+#setOff2 {
+   position: absolute;
+  width: 2%;
+  height: 1.6%;
+  bottom: 12.6%;
+  left: 18.84%;
+  z-index: 25;
+}
+
+#setOn {
+   position: absolute;
+  width: 10.5%;
+  height: 10.3%;
+  bottom: 12.8%;
+  left: 19.00%;
+  z-index: 24;
+}
+
+#setButtonHolder3 {
+   position: absolute;
+  width: 2.5%;
+  height: 3.9%;
+  bottom: 10.85%;
+  left: 18.6%;
+  z-index: 23;
+}
+#setButtonHolder2 {
+   position: absolute;
+  width: 2.5%;
+  height: 3.9%;
+  bottom: 10.85%;
+  left: 18.6%;
+  z-index: 23;
+}
+
+#downOnSwitch3 {
+  position: absolute;
+  width: 1.1%;
+  height: 1.8%;
+  bottom: 17.9%; /* 17.0 + 10% */
+  left: 230.795%;
+  z-index: 22;
+  visibility: visible;
+
+}
+
+#downOnSwitch2 {
+  position: absolute;
+  width: 1.1%;
+  height: 1.8%;
+  bottom: 17.9%; /* 17.0 + 10% */
+  left: 230.795%;
+  z-index: 22;
+  visibility: visible;
+
+}
+
+#upOnSwitch3 {
+  position: absolute;
+  width: 15%;
+  height: 1.84%;
+  bottom: 23.20%; /* 22.33 + 10% */
+  left: 40.7%;
+  z-index: 25;
+  visibility: hidden;
+  opacity: 100%;
+}
+#upOnSwitch2 {
+  position: absolute;
+  width: 15%;
+  height: 1.84%;
+  bottom: 23.20%; /* 22.33 + 10% */
+  left: 40.7%;
+  z-index: 25;
+  visibility: hidden;
+  opacity: 100%;
+}
+
+#upswitchholder3 {
+  position: absolute;
+  width: 1.9%;
+  height: 3.2%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 21.3%;
+  z-index: 23;
+}
+
+#upswitchholder2 {
+  position: absolute;
+  width: 1.9%;
+  height: 4.0%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 21.3%;
+  z-index: 23;
+}
+
+#upOffSwitch3 {
+  position: absolute;
+  width: 1.9%;
+  height: 3.2%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 21.3%;
+  z-index: 24;
+}
+
+#upOffSwitch2 {
+  position: absolute;
+  width: 1.9%;
+  height: 4.0%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 21.3%;
+  z-index: 24;
+}
+
+#offSwitch3 {
+  position: absolute;
+  width: 2.1%;
+  height: 8.3%;
+  bottom: 6.7%;
+  left: 14.5%;
+    z-index: 25;
+}
+
+#tube_cap_a {
+  position: absolute;
+  width: 2.3%;
+  height: 6%;
+  bottom: 13.5%;
+  left: 63.6%;
+    z-index: 40;
+    opacity: 100%;
+    transition: all 1s ;
+}
+
+#tube_cap_c {
+  position: absolute;
+  width: 2.3%;
+  height: 6%;
+  bottom: 10%;
+  left: 63.6%;
+    z-index: 40;
+    opacity: 100%;
+    transition: all 1s ;
+}
+#tube_cap_d {
+  position: absolute;
+  width: 2.3%;
+  height: 6%;
+  bottom: 10%;
+  left: 66.6%;
+    z-index: 40;
+    opacity: 100%;
+    transition: all 1s ;
+}
+
+#tube_cap_A {
+  position: absolute;
+  width: 6.3%;
+  height: 5.9%;
+  bottom: 3.4%;
+  left: 50.5%;
+    z-index: 25;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#tongs_A {
+  position: absolute;
+  width: 6.3%;
+  height: 5.9%;
+  bottom: 3.4%;
+  left: 53.5%;
+    z-index: 100;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#tube_cap_b {
+  position: absolute;
+  width: 2.3%;
+  height: 6%;
+ bottom: 13.5%;
+  left: 66.7%;
+    z-index: 40;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+
+#offSwitch2 {
+  position: absolute;
+  width: 2.1%;
+  height: 8.3%;
+  bottom: 6.7%;
+  left: 14.5%;
+    z-index: 25;
+}
+
+#onswitch3 {
+   position: absolute;
+  width: 1.6%;
+  height: 3.0%;
+  bottom: 12%;
+  left: 14.45%;
+  opacity: 100%;
+  z-index: 25;
+}
+
+#onswitch2 {
+   position: absolute;
+  width: 1.6%;
+  height: 3.0%;
+  bottom: 12%;
+  left: 14.45%;
+  opacity: 100%;
+  z-index: 25;
+}
+
+
+#actualTempDisplay3 {
+   position: absolute;
+
+ /* Background color area you care about */
+   color: rgb(255, 247, 0);
+  font-weight: bold;
+  font-size: 1.25vw;
+
+  text-align: center;
+  bottom: 22.2%;        /* 221.1 */
+   left: 17.6%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+  z-index: 50;
+
+}
+
+#actualTempDisplay2 {
+   position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(233, 13, 61);
+  font-weight: bold;
+  font-size: 1.2vw;
+
+  text-align: center;
+  bottom: 22.4%;        /* 221.1 */
+   left: 18.3%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0%;
+  z-index: 50;
+
+}
+
+
+#actualTempDisplay2 {
+   position: absolute;
+ /* Background color area you care about */
+  color: rgb(255, 247, 0);
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+  bottom: 22.4%;        /* 221.1 */
+   left: 18%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0%;
+  z-index: 50;
+}
+
+
+/*sample temp text */
+#sampleTempDisplay13 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1.25vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 52;
+}
+
+#sampleTempDisplay_mbrt {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1.2vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 52;
+}
+
+
+#sampleTempDisplay12 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 0.6vw;
+  
+  text-align: center;
+  bottom: 18.8%;
+  left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0%;
+    z-index: 52;
+}
+
+#actualTempDisplay13 {
+   position: absolute;
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1.25vw;
+  text-align: center;
+  bottom: 22.35%;
+   left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 23; 
+}
+
+#actualTempDisplay_mbrt {
+   position: absolute;
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+  bottom: 22.3%;
+   left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 23; 
+}
+
+#actualTempDisplay20 {
+  position: absolute;
+
+/* Background color area you care about */
+ color: cyan;
+ font-weight: bold;
+ font-size: 0.6vw;
+ 
+ text-align: center;
+ bottom: 22.9%;
+  left: 14.19%;
+ transition: all;
+ transition-duration: 1s;
+ opacity: 0%;
+   z-index: 23;
+    
+}
+
+#actualTempDisplay20 {
+   position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 0.6vw;
+  
+  text-align: center;
+  bottom: 22.9%;
+   left: 14.19%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0%;
+    z-index: 23;
+     
+}
+
+#sampleTempDisplay3 {
+  position: absolute;
+
+ /* Background color area you care about */
+ color: rgb(77, 255, 0);
+  font-weight: bold;
+  font-size: 1.25vw;
+  
+  text-align: center;
+  bottom: 17.67%;
+  left: 17.55%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 50;
+}
+
+#sampleTempDisplay2 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(77, 255, 0);
+  font-weight: bold;
+  font-size: 1.2vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 18%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 50;
+}
+
+#sampleTempDisplay21 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(233, 13, 61);
+  font-weight: bold;
+  font-size: 0.9vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 18.3%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0%;
+    z-index: 50;
+}
+
+
+
+  #tilted_butyrometer3 {
+    position: absolute;
+    height: 30.0%;
+    width: 2%;
+    bottom: 45.0%;
+    left: 22.35%;
+ 
+    opacity: 100%;
+    z-index: 20;
+    transition: 1s;
+  }
+
+
+   #straight_butyrometer3 {
+    position: absolute;
+    height: 50%;
+    width: 3.1%;
+    bottom: 12%;
+    left: 72.89%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+ }
+
+
+ #butyrometer3{
+    position: absolute;
+  
+  
+   bottom: 11.8%;
+    width: 3.0%;
+    height: 48%;
+    left: 72.97%;
+    z-index: 23;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+   
+    
+   
+    /* transform: translate(0%, -90%);
+    transform: translate(-190%, -90%);
+    
+    transform: translate(-190%, -60%);
+    transform: translate(-115%, -60%) rotate(180d
+    bottom :50%; */
+
+ 
+    
+    
+
+
+} 
+
+#timerDisplay {
+ 
+   position: absolute;
+  color: rgb(89, 10, 10);
+  background-color: yellow ;
+  font-weight: bold;
+  font-size: 1.4vw;
+  bottom: 83%;
+  width: 9%;
+  opacity: 100%;
+  left: 0.5%;
+  z-index: 30;
+  visibility: block;
+}
+
+#settimerDisplay {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 21.5%;
+ width: 9%;
+ opacity: 100%;
+ left: 18.3%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#actualtimerDisplay20 {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 21.5%;
+ width: 9%;
+ opacity: 100%;
+ left: 17%;
+ z-index: 1000;
+ visibility: block;
+}
+
+#sampletimerDisplay {
+  position: absolute;
+ color: rgb(203, 28, 28);
+ font-weight: bold;
+ font-size: 1vw;
+ bottom: 18%;
+ width: 9%;
+ opacity: 100%;
+ left: 18.3%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#sampletimerDisplay1{
+  position: absolute;
+ color: rgb(17, 224, 243);
+ font-weight: bold;
+ font-size: 0.7vw;
+ bottom: 18.3%;
+ width: 9%;
+ opacity: 100%;
+ left: 14%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+#sampletimerDisplay2{
+  position: absolute;
+ color: rgb(17, 224, 243);
+ font-weight: bold;
+ font-size: 0.7vw;
+ bottom: 21.8%;
+ width: 9%;
+ opacity: 100%;
+ left: 14%;
+ z-index: 30;
+ visibility: hidden;
+}
+
+
+
+#set{
+  position: absolute;
+ color: rgb(89, 10, 10);
+ background-color: yellow ;
+ font-weight: bold;
+ font-size: 1.4vw;
+ bottom: 83%;
+ width: 9%;
+ opacity: 100%;
+ left: 0.5%;
+ z-index: 30;
+ visibility: block;
+}
+
+
+
+#timerDisplay13{
+  position: absolute;
+  color: rgb(40, 237, 0);
+  font-weight: bold;
+  font-size: 2.6vw;
+  bottom: 18.9%;
+  width: 9%;
+  opacity: 100%;
+  left: 47.8%;
+  z-index: 30;
+  visibility: visible;
+  display: block;
+}
+
+
+#timerDisplay_mbrt{
+  position: absolute;
+  color: rgb(40, 237, 0);
+  font-weight: bold;
+  font-size: 2.3vw;
+  bottom: 18.9%;
+  width: 9%;
+  opacity: 100%;
+  left: 48.1%;
+  z-index: 30;
+  visibility: hidden;
+  display: block;
+}
+
+
+#timerDisplay12,
+#timerDisplay22 {
+    position: absolute;
+  color: rgb(89, 10, 10);
+  background-color: yellow ;
+  font-weight: bold;
+  font-size: 1.4vw;
+  bottom: 83%;
+  width: 9%;
+  opacity: 100%;
+  left: 0.5%;
+  z-index: 30;
+  visibility: visible;
+}
+
+#downSwitch3 {
+    position: absolute;
+  height: 3.2%;
+  bottom: 17.55%; /* 16.5 + 10% */
+  width: 1.8%;
+  left: 21.3%;
+   z-index: 55;
+   opacity: 100%;
+}
+
+#downSwitch2{
+    position: absolute;
+  height: 3.2%;
+  bottom: 17.55%; /* 16.5 + 10% */
+  width: 1.8%;
+  left: 21.3%;
+   z-index: 55;
+   opacity: 100%;
+}
+
+#tongs_down{
+    position: absolute;
+  height: 7.2%;
+  bottom: 12.55%; /* 16.5 + 10% */
+  width: 10.8%;
+  left: 47.7%;
+   z-index: 55;
+   opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#tongs_down2{
+    position: absolute;
+  height: 7.2%;
+  bottom: 68.55%; /* 16.5 + 10% */
+  width: 10.8%;
+  left: 65.8%;
+   z-index: 55;
+   opacity: 100%;
+    transition: all 1s ease-in-out;
+    rotate: 165deg;
+}
+#tongs_upper{
+    position: absolute;
+  height: 3.8%;
+  bottom: 17.15%; /* 16.5 + 10% */
+  width: 10.8%;
+  left: 47.7%;
+   z-index: 5;
+   opacity: 100%;
+   transition: all 1s ease-in-out;
+}
+#tongs_upper2{
+    position: absolute;
+  height: 3.8%;
+  bottom: 71.2%; /* 16.5 + 10% */
+  width: 10.8%;
+  left: 65.8%;
+   z-index: 5;
+   opacity: 100%;
+   transition: all 1s ease-in-out;
+   rotate: 185deg;
+}
+
+/*                ----------             Water bath Heat       ----             1st - end    */
+
+
+
+
+#onSwitchHolder {
+  position: absolute;
+  width: 2.4%;
+  height: 5.2%;
+  bottom: 10%;
+  left: 60%;
+   z-index: 22;  
+}
+
+
+
+#setOff {
+   position: absolute;
+  width: 1.7%;
+  height: 1.4%;
+  bottom: 12.85%;
+  left: 65.00%;
+  z-index: 25;
+}
+
+
+/* #door_open_close {
+  position: absolute;
+  width: 0.8%;
+  height: 0.9%;
+  bottom: 16.55%;
+  font-size: 0.05rem;
+  font: bold;
+  left: 17%;
+  z-index: 45;
+} */
+
+#setOn {
+   position: absolute;
+  width: 1.5%;
+  height: 1.3%;
+  bottom: 12.8%;
+  left: 65.1%;
+  z-index: 24;
+}
+
+#timerDisplay1,
+#timerDisplay2 {
+    position: absolute;
+  color: rgb(89, 10, 10);
+  background-color: yellow ;
+  font-weight: bold;
+  font-size: 1.3vw;
+  bottom: 87%;
+  width: 9%;
+  opacity: 100%;
+  left: 0.5%;
+  z-index: 30;
+  
+}
+#setButtonHolder {
+   position: absolute;
+  width: 2.5%;
+  height: 3.9%;
+  bottom: 10.85%;
+  left: 64.5%;
+  z-index: 23;
+}
+
+#downOnSwitch {
+  position: absolute;
+  width: 1.1%;
+  height: 1.8%;
+  bottom: 17.9%; /* 17.0 + 10% */
+  left: 67.795%;
+  z-index: 22;
+
+}
+
+#upOnSwitch {
+  position: absolute;
+   width: 1.3%;
+  height: 1.8%;
+  bottom: 23.0%; /* 21.43 + 10% */
+  left: 67.6%;
+  opacity: 100%;
+  z-index: 24;
+}
+
+#upswitchholder {
+  position: absolute;
+  width: 1.9%;
+  height: 3.2%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 67.3%;
+  z-index: 23;
+}
+
+#upOffSwitch {
+  position: absolute;
+  width: 1.9%;
+  height: 3.2%;
+  bottom: 22.3%; /* 21.43 + 10% */
+  left: 67.3%;
+  z-index: 24;
+}
+
+#downSwitch4 {
+  position: absolute;
+ width: 1.9%;
+  height: 3.0%;
+  bottom: 17.9%; /* 17.0 + 10% */
+  left: 67.2895%;
+  z-index: 22;
+ 
+   z-index: 55;
+   opacity: 100%;
+}
+
+
+#offSwitch {
+  position: absolute;
+  width: 2.1%;
+  height: 8.3%;
+  bottom: 6.7%;
+  left: 60.5%;
+    z-index: 25;
+}
+
+#onswitch {
+   position: absolute;
+  width: 1.6%;
+  height: 3.0%;
+  bottom: 12%;
+  left: 60.45%;
+  opacity: 100%;
+  z-index: 25;
+}
+
+
+#water-solution-centrifuge{
+    position: absolute;
+    height: 0%;
+    width: 0.3%;
+    top: 49.2%;
+    left: 81.55%;
+    transition: all;
+    z-index: 1;
+    transition-duration: 1s;
+    opacity: 100%;  
+}
+
+
+
+#sampleTempDisplay {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(233, 13, 61);
+  font-weight: bold;
+  font-size: 0.9vw;
+  
+  text-align: center;
+  bottom: 18.2%;
+  left: 64.3%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 50;
+  
+}
+
+
+/*                               centrifuge                          */
+
+
+#centrifuge_upper_open_lid {
+  position: absolute;
+  width: 17.50%;
+  height: 16.0%;
+  bottom: 44.54%;
+  left: 12.4%;
+  
+  
+ 
+  z-index:18;
+  visibility: hidden;
+
+  opacity: 100%;
+}
+
+/* #centrifuge_down_ward{
+  position: absolute;
+  width: 17.50%;
+  height: 36.9%;
+  bottom: 7.2%;
+  left: 11.95%;
+
+  z-index: 25;
+  visibility: visible;
+} */
+
+
+#centrifuge_mid_filling {
+    position: absolute;
+  width: 16.05%;
+  height: 5.3%;
+  bottom: 39.47%;
+  left: 13.39%;
+
+  z-index: 18;
+}
+
+#centrifuge_down_ward{
+    position: absolute;
+  width: 17.4%;
+  height: 33.9%;
+  bottom: 7%;
+  left: 12%;
+
+  z-index: 19;
+}
+#centrifuge_close_lid {
+  position: absolute;
+  width: 18.67%;
+  height: 16.4%;
+  bottom: 33.0%;
+  left: 11.6%;
+  overflow: hidden;
+  z-index: 30;
+
+
+}
+
+/* #centrifuge_top_filling {
+  position: absolute;
+ width: 18.19%;
+  height: 21.0%;
+  bottom: 39.55%;
+  left: 11.98%;
+  overflow: hidden;
+
+  z-index: 22;
+ 
+  opacity: 0%;
+} */
+
+#centrifuge_down_filling {
+    position: absolute;
+  width: 17.4%;
+  height: 33.9%;
+  bottom: 7%;
+  left: 12%;
+
+  z-index: 28;
+   visibility: hidden;
+}
+#Off_On_button {
+  position: absolute;
+
+
+   width: 1.0%;
+  height: 2.0%;
+  bottom: 16.83%;
+  left: 14.63%;
+  z-index: 41;
+  transition: 0s;
+}
+
+
+
+#On_Button {
+  position: absolute;
+ width: 1.0%;
+  height: 2.1%;
+  bottom: 16.7%;
+  left: 14.63%;
+  z-index: 40;
+  visibility: hidden;
+}
+
+#Time_increase_switch {
+  position: absolute;
+  width: 1.1%;
+  height: 2.0%;
+  bottom: 22.05%;
+  left: 20%;
+  z-index: 33;
+ 
+}
+
+#Time_decrease_switch {
+  position: absolute;
+  width: 1.1%;
+  height: 2.6%;
+  bottom: 19.2%;
+  left: 19.97%;
+  z-index: 40;
+  
+}
+
+#Start_Stop {
+  position: absolute;
+  width: 1.6%;
+  height: 2.9%;
+  bottom: 15.7%;
+  left: 18.86%;
+  z-index: 40;
+
+}
+#Off_Start_Stop {
+    position: absolute;
+  width: 1.5%;
+  height: 2.9%;
+  bottom: 15.7%;
+  left: 18.86%;
+  z-index: 42;
+}
+#Up_off_switch {
+  position: absolute;
+  width: 50.4%;
+  height: 5.2%;
+  bottom: 40%;
+  left: 15%;
+  z-index: 28;
+  visibility: hidden;
+}
+
+#Up_on_switch {
+  position: absolute;
+  width: 2.4%;
+  height: 5.2%;
+  bottom: 46%;
+  left: 15%;
+  z-index: 29;
+  visibility: hidden;
+}
+
+#rpm_decrease_button {
+  position: absolute;
+  width: 1.0%;
+  height: 1.9%;
+  bottom: 19.3%;
+  left: 24.2%;
+  z-index: 40;
+}
+
+#rpm_increase_button {
+ position: absolute;
+  width: 1.0%;
+  height: 1.7%;
+  bottom: 22.4%;
+  left: 24.2%;
+  z-index: 40;
+}
+#set_off {
+   position: absolute;
+  width: 1.79%;
+  height: 1.8%;
+  bottom: 16.35%;
+  left: 21.85%;
+
+  z-index: 51;
+}
+
+#Set{
+   position: absolute;
+  width: 10.79%;
+  height: 0.8%;
+  bottom: 15.35%;
+  font-size: 0.8vw;
+  left: 22.25%;
+  z-index: 55;
+  visibility: hidden;
+}
+#set_on {
+  position: absolute;
+ width: 1.79%;
+  height: 1.8%;
+  bottom: 16.35%;
+  left: 21.85%;
+  z-index: 50;
+}
+
+#door_open_off {
+  position: absolute;
+  width: 1.3%;
+  height: 1.3%;
+  bottom: 16.45%;
+  left: 16.64%;
+  z-index: 40;
+}
+
+#Open_button {
+  position: absolute;
+  width: 1.2%;
+  height: 1.2%;
+  bottom: 16.51%;
+  left: 16.6%;
+  z-index: 51;
+}
+
+#Close_button {
+  position: absolute;
+  width: 1.4%;
+  height: 1.3%;
+  bottom: 16.48%;
+  left: 16.6%;
+  z-index: 56;
+}
+/* #setTempDisplay2 {
+  bottom: 63%;
+  left: 60%;
+  visibility: visible;
+  z-index: 50;
+} */
+
+
+#beaker_water{
+    position: absolute;
+    bottom: 0%;
+    height: 23%;
+    width: 12%;
+    top: 68%;
+    left:38%;
+    z-index: 20;
+   
+    
+}
+#setTempDisplay5 {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  color: rgb(9, 255, 0);
+  height: 100%;
+  z-index: 30;
+  font-size: 1.2vw;
+}
+
+#water_beaker{
+    position: absolute;
+    bottom: 9%;
+    height: 15%;
+    width: 10%;
+ 
+    left: 39.6%;
+    z-index: 15;
+    transition: all;
+    transition: 1s;
+   
+    
+}
+
+
+#butyrometer_water_21ml{
+     position: absolute;
+    height: 0%;
+    width: 1.89%;
+    bottom: 12.0%;
+    left: 80.7%;
+    z-index: 19;
+    transition: all; 
+    transition-duration: 1s;
+    opacity: 100%;
+}
+
+/* RPM Box */
+
+
+/* Time Box */
+/* #timeBox {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 5.625rem;
+  z-index: 100;
+  opacity: 1;
+}
+
+/* Temp Box */
+/* #tempBox {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 5.625rem;
+  z-index: 100;
+  opacity: 1;
+} */ 
+
+
+#rpmLabel {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #5145d9;
+ 
+  z-index: 500;
+  opacity: 100%;
+     bottom: 26%;
+  left: 15.85%;
+  visibility: hidden;
+  text-align: center;
+}
+
+/* #timeLabel {
+  position: absolute;
+  font-size: 0.195rem;
+  font-weight: 700;
+  color: #555555;
+  margin-bottom: 0.5rem;
+  z-index: 500;
+  opacity: 100%;
+     bottom: 25.28%;
+  left: 16.5%;
+} */
+
+#tempLabel1{
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.101rem;
+  color: #555555;
+  margin-bottom: 0.5rem;
+  z-index: 500;
+  opacity: 100%;
+     bottom: 25.28%;
+  left: 16.5%;
+  visibility: hidden;
+}
+
+
+#rpmDisplay {
+  position: absolute;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #be3232;
+  z-index: 50;
+  opacity: 100%;
+   bottom: 25.43%;
+  left: 20.45%;
+  visibility: hidden;
+}
+
+#timeDisplay {
+  position: absolute;
+  font-size: 1.0vw;
+  font-weight: 700;
+  color: #bb2727;
+  z-index: 50;
+  opacity: 0%;
+    bottom: 21.08%;
+  left: 17.0%;
+  visibility: hidden;
+}
+
+#tempDisplay {
+  position: absolute;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #222222;
+  z-index: 50;
+  opacity: 100%;
+  visibility: hidden;
+}
+
+
+
+
+
+/*                   dsfsdfsdfsdfds            */
+.vapor {
+  position: relative;
+  width: 20px;
+  height: 60px;
+  margin: 20px auto;
+}
+
+.vapor::before, .vapor::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 30px;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.7) 0%, transparent 80%);
+  border-radius: 50%;
+  animation: rise 3s infinite ease-in;
+  opacity: 0.7;
+}
+
+.vapor::after {
+  left: 12px;
+  animation-delay: 1.5s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-60px) scale(1.5);
+    opacity: 0;
+  }
+}
+/* #actualTempDisplay,
+#setTempDisplay,
+#sampleTempDisplay {
+  display: none;
+} */
+
+/* #actualTempDisplay, #setTempDisplay {
+  position: absolute;
+  width: 150%;
+  padding: 10px;
+  background-color: black;
+  color: lime;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+} */
+
+#actualTempDisplay {
+   position: absolute;
+
+ /* Background color area you care about */
+  color: rgb(233, 13, 61);
+  font-weight: bold;
+  font-size: 0.9vw;
+
+  text-align: center;
+  bottom: 22.4%;        /* 221.1 */
+   left: 64.2%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+  z-index: 50;
+
+}
+
+
+/*sample temp text */
+#sampleTempDisplay1 {
+  position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 0.6vw;
+  
+  text-align: center;
+  bottom: 18.8%;
+  left: 59.99%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 52;
+}
+#actualTempDisplay1 {
+   position: absolute;
+
+ /* Background color area you care about */
+  color: cyan;
+  font-weight: bold;
+  font-size: 0.6vw;
+  
+  text-align: center;
+  bottom: 22.9%;
+   left: 59.99%;
+  transition: all;
+  transition-duration: 1s;
+  opacity: 100%;
+    z-index: 23;
+     
+}
+
+#setTempDisplay {
+  bottom: 63%;
+  left: 60%;
+  visibility: hidden;
+}
+
+/* Click feedback animation */
+@keyframes pulse {
+  0% { transform: scale(1); border-radius: 50%; }
+  50% { transform: scale(0.9); border-radius: 30%; }
+  100% { transform: scale(1); border-radius: 50%; }
+}
+
+
+.pulse-effect {
+  animation: pulse 0.5s ease-in-out;
+}
+
+
+@keyframes zoominout {
+  0% { transform: scale(1); border-radius: 50%; }
+  50% { transform: scale(1.2); border-radius: 30%; }
+  100% { transform: scale(1); border-radius: 50%; }
+}
+
+
+
+/* .dsolutionbig{
+    position: absolute;
+    height: 4%;
+    width: 10.8%;
+    top: 68.9%;
+    visibility: hidden;
+} */
+
+/* #dsolbig1{
+    left: 85.1%;
+} */
+
+/* #dsolbig2{
+    left: 71.1%;
+} */
+/* #dsolbig3{
+    left: 57.1%;
+} */
+/* #dsolbig4{
+    left: 43.1%;
+} */
+/* #dsolbig5{
+    left: 29.1%;
+} */
+.dsolutionsmall{
+    position: absolute;
+    /* height: 4.7%; */
+    height: 0%;
+    width:6.8%;
+    /* top: 80.1%; */
+    bottom: 15.2%;
+    /* visibility: hidden; */
+    transition: all;
+    transition-duration: 1s;
+}
+#dsolsmall1{
+    left: 86.6%;
+}
+
+
+#dsolsmall2{
+    left: 74.6%;
+}
+
+
+#dsolsmall3{
+    left: 62.6%;
+}
+
+
+#dsolsmall4{
+    left: 50.6%;
+}
+
+
+#dsolsmall5{
+    left: 38.6%;
+}
+
+#milk-beaker{
+    position: absolute;
+    bottom: 0%;
+    height: 23%;
+    width: 18%;
+    top: 68%;
+    left:38%;
+    z-index: 2;
+   
+    
+}
+
+#iso{
+    position: absolute;
+    bottom: 0%;
+    height: 30%;
+    width: 7.5%;
+    top: 60%;
+     left: 18.0%;
+    z-index: 2;
+    transition: all;
+    transition: 1s;
+    
+    
+}
+#iso_amyl_sol{
+    position: absolute;
+    height: 21%;
+    width: 7.5%;
+    bottom: 10%;
+     left: 18.0%;
+    transition: all;
+    transition: 1s;
+   
+    
+    
+}
+
+#iso_cap{
+    position: absolute;
+    bottom: 0%;
+    height: 5%;
+    width: 4.5%;
+    top: 59%;
+     left: 19.5%;
+    z-index: 2;
+    transition: 1s;
+    
+}
+
+
+
+
+#sulphuric{
+    position: absolute;
+    height: 27%;
+    width: 6.5%;
+    top: 63%;
+    left: 18%;
+    z-index: 2;
+       transition: all;
+    transition-duration: 1s
+
+    
+}
+
+#sulphuricsol{
+    position: absolute;
+    height: 17%;
+    width: 6.5%;
+    /* top: 73%; */
+    bottom: 10%;
+    left: 18.0%;
+    transition: all;
+    transition-duration: 1s
+    
+}
+
+#sulcap{
+    position: absolute;
+    height: 15%;
+    width: 7%;
+    top: 57.2%;
+    left: 17.7%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#pipette{
+    position: absolute;
+    height: 40%;
+    width: 3.5%;
+    top: 70%;
+    left: 18.1%;
+    rotate: -90deg;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    /* transition: transform 1s ease-in-out; */
+
+
+}
+
+#pipette_centrifuge{
+    position: absolute;
+    height: 30%;
+    width: 2.6%;
+   bottom: -1%;
+    left: 56.0%;
+    rotate: -90deg;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+}
+
+#pipette_familiar{
+  position: absolute;
+  height: 30%;
+  width: 2.6%;
+ bottom: -7%;
+  left: 45.0%;
+  rotate: -90deg;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 40;
+}
+
+#pipette_familiar_mbrt{
+  position: absolute;
+  height: 30%;
+  width: 2.6%;
+ bottom: -7%;
+  left: 45.0%;
+  rotate: -90deg;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 40;
+}
+
+#milk_beaker_familiar{
+  position: absolute;
+ height: 23%;
+  width: 11%;
+  top: 67%;
+  left: 35%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 9;
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+}
+
+#milk_beaker_familiar_mbrt{
+  position: absolute;
+ height: 23%;
+  width: 11%;
+  top: 67%;
+  left: 27%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 9;
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+}
+
+#clock_familiar{
+  position: absolute;
+  height: 22%;
+  width: 11.6%;
+ bottom: 9.8%;
+  left: 48.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#clock_familiar_mbrt{
+  position: absolute;
+  height: 22%;
+  width: 11.6%;
+ bottom: 9.8%;
+  left: 49.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#stopper_mbrt{
+  position: absolute;
+  height: 12%;
+  width: 3.6%;
+ bottom: 12.5%;
+  left: 62%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+
+#clock{
+  position: absolute;
+  height: 24%;
+  width: 11.9%;
+ bottom: 9.8%;
+  left: 45.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+
+#clock_mbrt{
+  position: absolute;
+  height: 24%;
+  width: 11.9%;
+ bottom: 9.8%;
+  left: 45.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+}
+#waterbath_familiar{
+  position: absolute;
+  height: 25%;
+  width: 20.6%;
+ bottom: 8%;
+  left: 10.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#waterbath_familiar_mbrt{
+  position: absolute;
+  height: 25%;
+  width: 20.6%;
+ bottom: 8%;
+  left: 6.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#tooltip {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.equipment {
+  cursor: pointer;
+}
+
+.popup-card {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1.25rem 1.56rem;   /* 20px 25px */
+  border-radius: 0.75rem;     /* 12px */
+  box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.25); /* 8px 20px */
+  z-index: 1000;
+  width: 48.75rem;            /* 300px */
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-card button {
+  margin-top: 0.62rem;        /* 10px */
+  padding: 0.375rem 0.875rem;/* 6px 14px */
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 0.375rem;    /* 6px */
+  cursor: pointer;
+}
+
+.exp-title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-title {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin-bottom: 0.3rem;
+}
+
+.tip-text {
+  font-size: 1rem;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+
+
+#tooltip_mbrt {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.equipment_mbrt {
+  cursor: pointer;
+}
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+
+
+#test_tube_familiar{
+  position: absolute;
+  height: 52%;
+  width: 26.6%;
+ bottom: 7.6%;
+  left: 63.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#test_tube_familiar_mbrt{
+  position: absolute;
+  height: 52%;
+  width: 26.6%;
+ bottom: 7.6%;
+  left: 67.0%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#methylene_blue_familiar_mbrt{
+  position: absolute;
+  height: 30%;
+  width: 6.6%;
+ bottom: 12.6%;
+  left: 41.3%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  
+}
+
+#a_cob_test{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_cob_test{
+  position: absolute;
+  height: 5.5%;
+  width: 8.7%;
+ bottom: 67.8%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_cob_test{
+  position: absolute;
+  height: 5.5%;
+  width: 8.7%;
+ bottom: 60.1%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_cob_test{
+  position: absolute;
+  height: 6%;
+  width: 8.8%;
+ bottom: 52.3%;
+  left: 38.5%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_quality{
+  position: absolute;
+  height: 5.2%;
+  width: 8.6%;
+ bottom: 67.8%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 60.2%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_quality{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 53.1%;
+  left: 52.6%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 75.3%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 67.8%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 61%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_texture{
+  position: absolute;
+  height: 5%;
+  width: 8.6%;
+ bottom: 53.1%;
+  left: 66.4%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#a_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 75.3%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#b_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 67.8%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#c_color{
+  position: absolute;
+  height: 3.8%;
+  width: 7.8%;
+ bottom: 61%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#d_color{
+  position: absolute;
+  height: 4%;
+  width: 7.8%;
+ bottom: 53.1%;
+  left: 80.2%;
+  transition: all;
+  transition-duration: 1s;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#pipette_centrifuge2{
+    position: absolute;
+    height: 30%;
+    width: 2.6%;
+   bottom: -6%;
+    left: 30.0%;
+    rotate: -90deg;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 13;
+}
+
+#milk_sample_a_5ml{
+   position: absolute;
+    height: 0%;
+    width: 0.8%;
+   bottom: 18.3%;
+    left: 10.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+}
+#milk_sample_a_10ml{
+   position: absolute;
+    height: 12.2%;
+    width: 2%;
+   bottom: 18.3%;
+    left: 60.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+}
+
+#milk_10ml_a{
+   position: absolute;
+    height: 0%;    /* 21.4 % */
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#milk_10ml_b{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 18.15%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#milk_10ml_c{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 29.15%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#milk_10ml_d{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 22.5%;
+    left: 41%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#methylene_blue_container{
+   position: absolute;
+    height: 29%;
+    width: 7.1%;
+   bottom: 11.6%;
+    left: 49%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 34;
+    opacity: 100%;
+}
+
+
+
+
+
+#methylene_blue_cap{
+   position: absolute;
+    height: 5.5%;
+    width: 3%;
+    bottom: 13%;
+    left: 57%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 100%;
+}
+
+#methylene_blue_1ml{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 25.8%;
+    left: 52.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+
+#methylene_blue_1ml_b{
+   position: absolute;
+    height: 3.6%;
+    width: 0.6%;
+    bottom: 24%;
+    left: 51.56%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+#methylene_blue_1ml_c{
+   position: absolute;
+    height: 3.6%;
+    width: 0.6%;
+    bottom: 24%;
+    left: 51.23%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+#methylene_blue_1ml_d{
+   position: absolute;
+    height: 3.6%;
+    width: 0.6%;
+    bottom: 24%;
+    left: 51.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+
+#methylene_blue_drop1{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 36%;
+    left: 75%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+
+#methylene_blue_drop1_b{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 36%;
+    left: 70.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+
+#methylene_blue_drop2{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 75%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+
+#methylene_blue_drop3{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 78.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+#methylene_blue_drop4{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 82.3%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+#methylene_blue_drop5{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 86.1%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+
+
+#methylene_blue_drop2_b{
+   position: absolute;
+    height: 3.7%;
+    width: 0.6%;
+    bottom: 30.5%;
+    left: 70.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+}
+#milk_sample_b_5ml{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 23.20%;
+    left: 21.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 100%;
+}
+#milk_sample_c_5ml{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 18.3%;
+    left: 32.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+}
+#milk_sample_d_5ml{
+   position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 15.4%;
+    left: 44.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+}
+
+#milk_strip_a{
+   position: absolute;
+    height: 0%;   /* 42.2*/
+    width: 0.28%;
+   top: 45.3%;
+    left: 70.55%;
+    transition: all;
+  
+    z-index: 5;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_strip_b{
+   position: absolute;
+    height: 0%;        /* 42.2%   */
+    width: 0.25%;
+   top: 45.3%;
+    left: 74.3%;
+    transition: all;
+
+    z-index: 5;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+
+#milk_strip_a_2{
+   position: absolute;
+    height: 0%;    /* 32.2  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 75.28%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_strip_b_2{
+   position: absolute;
+    height: 0%;   /*  32.2%  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 78.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+
+#milk_strip_c_2{
+   position: absolute;
+    height: 0%;   /*  32.2%  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 82.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_strip_d_2{
+   position: absolute;
+    height: 0%;   /*  32.2%  */
+    width: 0.3%;
+   top: 54.3%;
+    left: 85.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 1;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+
+
+
+
+/* 
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+#milk_strip_c{
+   position: absolute;
+    height: 0%;
+    width: 0.3%;
+   top: 47%;
+    left: 78.02%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 5;
+    opacity: 100%;
+}
+
+#milk_strip_d{
+   position: absolute;
+    height: 0%;   /* 37.2  */
+    width: 0.3%;
+   top: 47%;
+    left: 81.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 5;
+    opacity: 100%;
+}
+
+#milk_tube_a_2{
+   position: absolute;
+    height: 0%;    /* 17.8  */
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 74.5%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+#methylene_mid_blue{
+   position: absolute;
+    height: 17.8%;
+    width: 1.8%;
+   bottom: 11.8%;
+    left: 66.2%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_mid_blue_b{
+   position: absolute;
+    height: 17.8%;
+    width: 1.7%;
+   bottom: 11.8%;
+    left: 69.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_blue_tube{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 74.5%;
+   
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+
+}
+#closed_methylene_blue_tube_a{
+   position: absolute;
+    width: 2.24%;
+    height: 40%;
+   bottom: 11.8%;
+    left: 74.4%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_a_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 13.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_b_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 18.4%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_c_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 22.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+#closed_white_tube_d_mbrt{
+   position: absolute;
+    width: 1.34%;
+    height: 28.2%;
+   bottom: 11%;
+    left: 26.6%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+
+
+#closed_methylene_blue_tube_c{
+   position: absolute;
+   width: 2.24%;
+    height: 40%;
+   bottom: 11.8%;
+    left: 81.5%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_methylene_blue_tube_d{
+   position: absolute;
+   width: 2.24%;
+    height: 40%;
+   bottom: 11.8%;
+    left: 85.1%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_white3_tube_d{
+   position: absolute;
+    width: 2.2%;
+    height: 42.18%;
+   bottom: 11.8%;
+    left: 85.1%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_white_tube_a{
+   position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 14.9%;
+    left: 18%;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#closed_white_tube_b{
+   position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 14.9%;
+    left: 22.5%;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#closed_methylene_blue_tube_a_2{
+   position: absolute;
+    width: 2%;
+    height: 41%;
+   bottom: 60%;
+    left: 66.1%;
+   visibility: visible;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#closed_methylene_blue_tube_b{
+   position: absolute;
+    width: 2.24%;
+    height: 40%;
+   bottom: 11.8%;
+    left: 77.8%;
+   visibility: hidden;
+    z-index: 20;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
+}
+#closed_light_blue_tube{
+   position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 14.9%;
+    left: 22.5%;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#closed_pale_blue_tube{
+  position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 14.9%;
+    left: 22.5%;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#tilted_light_blue_tube{
+  position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 60%;
+    left: 22.5%;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#closed_methylene_blue_tube_b_2{
+   position: absolute;
+    width: 2%;
+    height: 41%;
+   bottom: 60.3%;
+    left: 68.7%;
+   visibility: visible;
+    z-index: 20;
+    opacity: 0%;
+    transition: all 1s ease-in-out;
+}
+#methylene_blue_tube_b{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 77.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_blue_tube_c{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 81.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 10;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#methylene_blue_tube_d{
+   position: absolute;
+    height: 17.8%;
+    width: 2.0%;
+   bottom: 11.8%;
+    left: 85.2%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 10;
+    opacity: 0%;
+    transition: transform 1s ease-in;
+}
+#inverted_methylene_blue_tube_a{
+   position: absolute;
+    height: 41%;
+    width: 2.1%;
+   bottom: 60%;
+    left: 74.4%;
+    transition-duration: 1s;
+    z-index: 18; 
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+#inverted_methylene_blue_tube_b{
+    position: absolute;
+    height: 41%;
+    width: 2.1%;
+   bottom: 60%;
+    left: 78%;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+
+#inverted_methylene_blue_tube_c{
+    position: absolute;
+    height: 41%;
+    width: 2.1%;
+   bottom: 61.5%;
+    left: 81.5%;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+
+#inverted_methylene_blue_tube_d{
+    position: absolute;
+    height: 41%;
+    width: 2.1%;
+   bottom: 61.5%;
+    left: 85.1%;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+
+#inverted_pale_blue_tube{
+    position: absolute;
+    width: 1.26%;
+    height: 26.7%;
+   bottom: 60%;
+    left: 22.5%;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+
+#milk_tube_b_2{
+   position: absolute;
+    height: 0%;   /* 17.8 */
+    width: 2%;
+   bottom: 11.8%;
+    left: 77.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_tube_c_2{
+   position: absolute;
+    height: 0%;   /* 17.8 */
+    width: 2.1%;
+   bottom: 11.8%;
+    left: 81.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_tube_d_2{
+   position: absolute;
+    height: 0%;   /* 17.8 */
+    width: 2%;
+   bottom: 11.8%;
+    left: 85.1%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 18;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+#milk_tube_a{
+   position: absolute;
+      height: 0%;  /*  20.5% */
+    width: 2.53%;
+   bottom: 12.0%;
+    left: 69.45%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 15;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+#milk_tube_b{
+   position: absolute;
+    height: 0%;
+    width: 2.50%;
+   bottom: 12.0%;
+    left: 73.16%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 15;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+#milk_tube_c{
+   position: absolute;
+     height: 0%;
+    width: 2.50%;
+   bottom: 12.0%;
+    left: 76.82%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 15;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+#observation_table_cob{
+   z-index: 1;
+}
+#milk_tube_d{
+   position: absolute;
+     height: 0%;   /* 20% */
+    width: 2.53%;
+   bottom: 12.0%;
+    left: 80.4%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 15;
+    opacity: 100%;
+    transition: height 1s linear;
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#pipette_21ml{
+    position: absolute;
+    height: 0%;
+    width: 0.6%;
+   bottom: 20.5%;
+    left: 44.21%;
+    rotate: 0deg;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 17;
+    /* transition: transform 1s ease-in-out; */
+}
+
+#milk-beaker-overlay{
+    position: absolute;
+    height: 18%;
+    width: 15.5%;
+    bottom: 9.24%;
+   
+    left: 39.3%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+#pipette_milk{
+    position: absolute;
+    transform-origin: bottom;
+    height: 18.7%;
+    width: 0.85%;
+    bottom: 23.8%;
+    left: 42.6%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: 0;
+    opacity: 0%;
+   
+    
+    
+
+
+}
+
+/* #baloon{
+    position: absolute;
+    height: 8%;
+    width: 3%;
+    top: 89%;
+    left: 9.5%;
+    rotate: -90deg;
+} */
+
+/* #pipettesol{
+    position: absolute;
+    height: 6%;
+    width: 0.85%;
+    bottom: 13%;
+    left: 20.9%;
+    transition: all;
+    transition-duration: 1s;
+} */
+
+#pipettesol{
+    position: absolute;
+    height: 16.02%;
+    width: 0.8%;
+    bottom: 17%;
+    left: 20.9%;
+    transition: all;
+    transition-duration: 1s;
+    z-index: -0.7;
+    opacity: 0%;
+   
+   
+    
+}
+#pipette_amyl{
+    position: absolute;
+    /* height: 16.02%;
+    width: 0.8%; */
+                            bottom: 33%;
+    /* left: 20.9%; */
+    
+    z-index: 1;
+    opacity: 0%;
+    width: 0.8%;
+    height: 5%;
+                         left: 21.4%;
+    transition: all;
+    transition-duration: 1s;
+    /* left: 74.1%; */    
+}
+#amyl_drop1{
+    position: absolute;
+    /* height: 16.02%;
+    width: 0.8%; */
+                            bottom: 54%;
+    /* left: 20.9%; */
+    
+    z-index: -0.7;
+    opacity: 0%;
+    width: 0.5%;
+    height: 3%;
+                         /* left: 21.4%; */
+    transition: all;
+    transition-duration: 1s;
+    left: 74.25%;
+}
+#amyl_drop2{
+    position: absolute;
+    /* height: 16.02%;
+    width: 0.8%; */
+                            bottom: 54%;
+    /* left: 20.9%; */
+    
+    z-index: 2;
+    opacity: 0%;
+    width: 0.5%;
+    height: 3%;
+                         /* left: 21.4%; */
+    transition: all;
+    transition-duration: 1s;
+    left: 74.25%;
+
+   
+   
+    
+    
+}
+
+
+/* #stp1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    visibility:visible ;
+} */
+
+#stp23{
+    
+    visibility:hidden ;
+}
+#stp32{
+ 
+    visibility:hidden;
+}
+/* #stp49{
+    position: absolute;
+    visibility:hidden;
+} */
+
+#stp39{
+ 
+    visibility: hidden;
+}
+#stp15{
+ 
+  visibility: hidden;
+}
+
+#stp196{
+  display: none;
+}
+
+#stp19{
+  display: none;
+}
+
+#stp2-section{
+    opacity: 0%;
+    visibility: hidden;
+}
+
+#stp77{
+ 
+    visibility:hidden;
+   
+}
+#stp70{
+  
+    visibility: hidden ;
+}
+#stp18{
+  
+    visibility: visible ;
+}
+#stp12{
+  
+    visibility: visible;
+   
+}
+#stp16{
+  visibility: hidden;
+}
+
+/* .dp{
+    position: absolute;
+    height: 2%;
+    width: 7%;
+    left: 22%;
+    bottom: 19%;
+    /* bottom: 20%; */
+    /* top: 60%; */
+    /* left: 62.5%;
+    left: 38.5%;
+    left: 50.5%; */
+    /* transition: all;
+    transition-duration: 1s; */
+/* } */
+
+/* .petri{
+    position: absolute;
+    height: 3%;
+    width: 5%;
+    /* top: 87%;
+    left: 29.5%; */
+    /* transition: all;
+    transition-duration: 1s; */
+    
+/* } */
+
+#petri1{
+    top: 80%;
+    left: 30.5%;
+
+}
+
+#petri2{
+    top: 83%;
+    left: 29.5%;
+    
+}
+
+#petri3{
+    top: 88%;
+    left: 27.5%;
+    
+}
+
+#petri4{
+    top: 83%;
+    left: 32.5%;
+    /* rotate: 10deg; */
+    
+}
+
+#petri5{
+    top: 86%;
+    left: 28.5%;
+    /* rotate: -10deg; */
+}
+
+
+
+#machine{
+    position: absolute;
+    height: 20%;
+    width: 18%;
+    top: 70%;
+    left: 3%;
+}
+
+#on{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    padding: 0.1%;
+    background-color: red;
+    border-radius: 10%;
+    font-size: 0.8vw;
+
+} */
+
+
+
+
+#bread{
+    position: absolute;
+    top: 81%;
+    left: 22%;
+    height: 15%;
+}
+
+
+#observe{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    font-size: 8vw;
+    justify-items: center;
+    opacity: 0%;
+    /* opacity: 100%; */
+    visibility: hidden;
+    /* visibility: visible; */
+    transition: all;
+    transition-duration: 1s;
+}
+
+#obtext{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    /* top: 5%;
+    left: 40%;
+    font-size: 5vw; */
+    transition: all;
+    transition-duration: 1s;
+}
+
+#inftext{
+    position: absolute;
+    top: 30%;
+    font-size: 2.5vw;
+    font-weight: 300;
+    top: 20%;
+    left: 10%;
+    opacity: 0%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#tablesdiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0%;
+    visibility: hidden;
+    /* opacity: 100%;
+    visibility: visible;  */
+    transition: all;
+    transition-duration: 1s;
+}
+
+.tbl1,th,td{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: separate;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+#table1{
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    top: 25%;
+    left: 15%;
+}
+
+#tabletext{
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+#fullform{
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 500;
+    top: 80%;
+    left: 15%;
+} 
+
+
+
+
+
+
+
+/* ================= UI TABLE LAYER ================= */
+
+
+
+.table-container {
+  position: fixed;
+  top: 4rem;                 /* 120px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 68.75rem;         /* 1100px */
+
+  background: white;
+  padding: 0.9375rem;          /* 15px */
+  border: 0.1875rem solid black; /* 3px */
+  border-radius: 0.5rem;       /* 8px */
+
+  z-index: 1;
+}
+
+/* table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 0.125rem solid black; /* 2px */
+  padding: 0.625rem;            /* 10px */
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+
+
+.inference {
+  position: absolute;
+  width: 100%;
+  max-width: 100rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  background-color: #ffffff;
+  border: 0.25rem solid black;
+  border-radius: 0.5rem;
+  left: -0.1%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  z-index: 1000;
+}
+
+#inferenceBtn {
+  position:absolute;
+  display: block;
+  margin: 2rem auto;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+
+
+/* =========================
+   MBRT Experiment Table
+   ========================= */
+
+
+
+
+
+
+
+
+
+
+@keyframes blinking {
+    0%{opacity: 100%;}
+    50%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes vibrate {
+    0%{scale: 1.1;}
+    50%{scale: 1.0;}    
+    100%{scale: 1.1;}
+    
+}
+
+@keyframes Steps{
+    0%{left: -641px;}
+    100%{left: 0px;}
+}
+
+
+  .dashboard {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #e8f5e9;
+      border-radius: 12px;
+      padding: 30px;
+      width: 250px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s, background 0.3s;
+      font-family: Arial, sans-serif;
+    }
+
+    .card:hover {
+      background: #c8e6c9;
+      transform: translateY(-5px);
+    }
+
+    .simulation {
+      display: none;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .back-btn {
+      background: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+
+/* ===== MBRT INFERENCE BOX ===== */
+/* MBRT inference ONLY */
+
+
+/* button */
+
+
+.hidden{
+  visibility: hidden;
+}
