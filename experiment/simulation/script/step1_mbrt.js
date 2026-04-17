@@ -35,6 +35,7 @@ const observation_table_mbrt = document.querySelector('#observation_table_mbrt')
 
               const inferenceBtn_mbrt = document.getElementById("inferenceBtn_mbrt");
                    const inferenceBox_mbrt = document.getElementById("inferenceBox_mbrt");
+                   const workingTable = document.getElementById("workingtable");
 window.onload = function() {
 
 
@@ -580,16 +581,16 @@ function pipette2() {
 
                                         setTimeout(function () {
                                           milk_strip_b_2.style.height = "32.2%";
-
+                                         
                                           setTimeout(function () {
                                             milk_tube_b_2.style.height = "17.8%";
-
+                                                   test_tube_b_2.style.visibility = "visible"
+                                                                            test_tube_mbrt_b.style.visibility = "hidden" 
                                             setTimeout(function () {
                                               milk_10ml_b.style.opacity = "0%";
                                               milk_strip_b_2.style.opacity = "0%";
                                               pipette_centrifuge2.style.zIndex = "20";
-                                                 test_tube_b_2.style.visibility = "visible"
-                                                                            test_tube_mbrt_b.style.visibility = "hidden"
+                                            
                                               setTimeout(function () {
                                                 pipette_centrifuge2.style.bottom = "60.4%";
                                                 pipette_centrifuge2.style.zIndex = "5";
@@ -612,7 +613,7 @@ function pipette2() {
                                                           f = 103;
 
                                                           setTimeout(function () {
-                                                            pipette_centrifuge2.style.left = "81.8%";
+                                                            pipette_centrifuge2.style.left = "81%";
                                                             milk_10ml_c.style.left = "82%";
 
                                                             setTimeout(function () {
@@ -657,9 +658,10 @@ function pipette2() {
                                                                                   milk_10ml_d.style.opacity = "0%";
                                                                                   milk_strip_d_2.style.height = "32.2%";
                                                                                   milk_tube_d_2.style.height = "17.8%";
-                                                                                             test_tube_d.style.visibility = "visible"
+                                                                                            test_tube_d.style.visibility = "visible"
                                                                             test_tube_mbrt_d.style.visibility = "hidden"
                                                                                   setTimeout(function () {
+                                                                                     
                                                                                     milk_strip_d_2.style.opacity = "0%";
                                                                                     pipette_centrifuge2.style.bottom = "60%";
                                                                                     pipette_centrifuge2.style.zIndex = "20";
@@ -790,11 +792,11 @@ function pipette2() {
                                                                                                                                                                                                                       
                                                                                                                                                                                                                            f = 104.5;
                                                                                                                                                                                                                             ins.innerText = "Click on the Stopper A to put stopper on each tube"                                                                                                                                                                                                                                                                                                                                                                                                                      }, 1000);
-                                                                                                                                                                                                                    }, 0);
-                                                                                                                                                                                                                  }, 0);
-                                                                                                                                                                                                                     }, 0);  // 100
-                                                                                                                                                                                                              }, 0);
-                                                                                                                                                                                                                }, 0);
+                                                                                                                                                                                                                    },  1000);
+                                                                                                                                                                                                                  }, 1000);
+                                                                                                                                                                                                                     }, 100);  // 100
+                                                                                                                                                                                                              }, 1000);
+                                                                                                                                                                                                                }, 1000);
                                                                                                                                                                                                                   }, 1000);  
                                                                                                                                                                                                                     }, 1000);
                                                                                                                                                                                                         }, 1000);
@@ -832,86 +834,86 @@ function pipette2() {
                                                                                           }
                                                                                         }, { once: true });
 
-                                                                                      }, 0);
+                                                                                      }, 1000);
 
-                                                                                    }, 0);
+                                                                                    }, 1000);
 
-                                                                                  }, 0);
+                                                                                  }, 1000);
 
-                                                                                }, 0);
+                                                                                }, 1000);
 
-                                                                              }, 0);
+                                                                              }, 1000);
 
-                                                                            }, 0);
+                                                                            }, 1000);
 
-                                                                          }, 0);
+                                                                          }, 1000);
 
-                                                                        }, 0);
+                                                                        }, 1000);
 
-                                                                      },0);
+                                                                      }, 1000);
 
-                                                                    }, 0);
+                                                                    }, 1000);
 
-                                                                  }, 0);
+                                                                  }, 1000);
 
-                                                                }, 0);
+                                                                }, 1000);
 
-                                                              }, 0);
+                                                              }, 1000);
 
-                                                            }, 0);
+                                                            }, 1000);
 
-                                                          }, 0);
+                                                          }, 1000);
                                                         }
 
-                                                      }, 0);
+                                                      }, 1000);
 
-                                                    }, 0);
+                                                    }, 1000);
 
-                                                  }, 0);
+                                                  }, 1000);
 
-                                                }, 0);
+                                                }, 1000);
 
-                                              }, 0);
+                                              }, 1000);
 
-                                            }, 0);
+                                            }, 1000);
 
-                                          }, 0);
+                                          }, 1000);
 
-                                        }, 0);
+                                        }, 1000);
 
-                                      }, 0);
+                                      }, 1000);
 
-                                    }, 0);
+                                    }, 1000);
 
-                                  }, 0);
+                                  }, 1000);
 
-                                }, 0);
+                                }, 1000);
 
-                              }, 0);
+                              }, 1000);
 
-                            }, 0);
+                            }, 1000);
 
-                          }, 0);
+                          }, 1000);
 
-                        }, 0);
+                        }, 1000);
 
-                      }, 0);
+                      }, 1000);
 
-                    }, 0);
+                    }, 1000);
 
-                  }, 0);
+                  }, 1000);
 
-                }, 0);
+                }, 1000);
 
-              }, 0);
+              }, 1000);
 
-            }, 0);
+            }, 1000);
 
-          }, 0);
+          }, 1000);
 
-        }, 0);
+        }, 1000);
 
-      }, 0);
+      }, 1000);
 
     }, { once: true });
 
@@ -966,18 +968,18 @@ tube_cap_a.addEventListener("click", () => {
                     f=106.5;
                     ins.innerText = "Click on NEXT button"
                     startbutton.style.visibility = "visible"
-                                  }, 0);  //100
-                                          }, 0);
-                                        }, 0);
-                                          }, 0);
-                                      },0);
-                                            }, 0);
-                                                  }, 0);
-                           }, 0);
-                      }, 0);
-                        }, 0);
-                          }, 0);
-          }, 0);
+                                  }, 100);  //100
+                                          }, 1000);
+                                        }, 1000);
+                                          }, 1000);
+                                      }, 1000);
+                                            }, 1000);
+                                                  }, 1000);
+                           }, 1000);
+                      }, 1000);
+                        }, 1000);
+                          }, 1000);
+          }, 1000);
    }else{(console.log(" the value of f is anot 104.5 ", f))}
   })
 
@@ -1298,49 +1300,49 @@ closed_methylene_blue_tube_a.addEventListener("click", () => {
                                                                         },1000) 
                                                                           },1000) 
                                                                             },1000) 
-                                                           },0) 
-                                                              },0) 
-                                                                 },0) 
-                                                                                                                       },0)   
-                                                                                                                              },0)   
-                                                                                                                                     },0)   
-                                                                                                                                            },0)   
-                                                                                                                                                   },0)   
-                                                                                                                                                          },0)   
-                                                                                                                                                                 },0)   
-                                                                   },0)   
-                                                                      },0)   
-                                                                         },0)   
-                                                                            },0)   
-                                                                               },0)   
+                                                           }, 1000) 
+                                                              }, 1000) 
+                                                                 }, 1000) 
+                                                                                                                       }, 1000)   
+                                                                                                                              }, 1000)   
+                                                                                                                                     }, 1000)   
+                                                                                                                                            }, 1000)   
+                                                                                                                                                   }, 1000)   
+                                                                                                                                                          }, 1000)   
+                                                                                                                                                                 }, 1000)   
+                                                                   }, 1000)   
+                                                                      }, 1000)   
+                                                                         }, 1000)   
+                                                                            }, 1000)   
+                                                                               }, 1000)   
 
-                                                               },0)               
-                                                                 },0) 
-                                                                   },0) 
-                                                                     },0) 
-                                                     },0)     
-                                                     },0)
-                                                     },0)
-                                            },0)
-                                      },0)
-            },0)
-        },0)
-  },0)
- }, 0);
-}, 0);
-}, 0);
-}, 0); // 1500
-}, 0);
-}, 0);
-                                   }, 0);
+                                                               }, 1000)               
+                                                                 }, 1000) 
+                                                                   }, 1000) 
+                                                                     }, 1000) 
+                                                     }, 1000)     
+                                                     }, 1000)
+                                                     }, 1000)
+                                            }, 1000)
+                                      }, 1000)
+            }, 1000)
+        }, 1000)
+  }, 1000)
+ }, 1000);
+}, 1000);
+}, 1000);
+}, 1500); // 1500
+}, 1000);
+}, 1000);
+                                   }, 1000);
                          
-                   }, 0);
+                   }, 1000);
                          
-               }, 0);
+               }, 1000);
          }
         
-         }, 0);
-                            }, 10);
+         }, 1000);
+                            }, 1000);
               
                 
   
@@ -1889,7 +1891,7 @@ function hello_world_mbrt_d_d(){
                   ins.innerText = "Now click on Show Inference Button"
                   inferenceBtn_mbrt.style.visibility = "visible"
                   inferenceBtn_mbrt.style.display = "block"
-                  document.getElementById("workingtable").src = "images/light_blue_color.jpg";
+                  workingTable.src = "images/bgblue.png";
                    },1000)
                     },1000)
                       },1000)
