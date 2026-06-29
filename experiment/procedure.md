@@ -13,6 +13,7 @@ Procedure  <br>
 1B: MBRT Test<br>
 Requirements (Instruments, Chemicals & Other)<br>
 Milk sample<br>
+Standard methylene blue solution<br>
 Test tubes<br>
 Water bath<br>
 
