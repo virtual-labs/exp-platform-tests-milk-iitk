@@ -1,0 +1,691 @@
+
+/home/runner/work/exp-platform-tests-milk-iitk/exp-platform-tests-milk-iitk/experiment/simulation/script/project_cob.js
+    2:5   warning  'startlab2' is assigned a value but never used     no-unused-vars
+    5:5   warning  'stp12' is assigned a value but never used         no-unused-vars
+    6:5   warning  'stp13' is assigned a value but never used         no-unused-vars
+    7:5   warning  'tablesdiv' is assigned a value but never used     no-unused-vars
+    8:5   warning  'inftext' is assigned a value but never used       no-unused-vars
+    9:5   warning  'stp23' is assigned a value but never used         no-unused-vars
+   10:5   warning  'stp33' is assigned a value but never used         no-unused-vars
+   13:5   warning  'stp63' is assigned a value but never used         no-unused-vars
+   14:5   warning  'stp32' is assigned a value but never used         no-unused-vars
+   15:5   warning  'stp70' is assigned a value but never used         no-unused-vars
+   20:5   warning  'stp196' is assigned a value but never used        no-unused-vars
+   22:5   warning  'stp2_section' is assigned a value but never used  no-unused-vars
+   62:9   warning  'pipette1' is not defined                          no-undef
+   67:9   warning  'tubewaterbath' is not defined                     no-undef
+   79:11  warning  'milk_tube_b' is not defined                       no-undef
+   99:9   warning  'sensory_a' is not defined                         no-undef
+  103:9   warning  'sensory_a_result' is not defined                  no-undef
+  109:9   warning  'sensory_b_result' is not defined                  no-undef
+  113:9   warning  'sensory_c' is not defined                         no-undef
+  117:9   warning  'sensory_c_result' is not defined                  no-undef
+  121:9   warning  'sensory_d' is not defined                         no-undef
+  125:9   warning  'sensory_d_result' is not defined                  no-undef
+  170:11  warning  'xPercent' is assigned a value but never used      no-unused-vars
+  171:11  warning  'yPercent' is assigned a value but never used      no-unused-vars
+  186:10  warning  'closePopup' is defined but never used             no-unused-vars
+
+/home/runner/work/exp-platform-tests-milk-iitk/exp-platform-tests-milk-iitk/experiment/simulation/script/project_mbrt.js
+    5:5   warning  'startlab2' is assigned a value but never used     no-unused-vars
+    8:5   warning  'stp12' is assigned a value but never used         no-unused-vars
+    9:5   warning  'stp13' is assigned a value but never used         no-unused-vars
+   10:5   warning  'tablesdiv' is assigned a value but never used     no-unused-vars
+   11:5   warning  'inftext' is assigned a value but never used       no-unused-vars
+   12:5   warning  'stp23' is assigned a value but never used         no-unused-vars
+   13:5   warning  'stp33' is assigned a value but never used         no-unused-vars
+   15:5   warning  'stp15' is assigned a value but never used         no-unused-vars
+   16:5   warning  'stp16' is assigned a value but never used         no-unused-vars
+   19:5   warning  'stp63' is assigned a value but never used         no-unused-vars
+   20:5   warning  'stp32' is assigned a value but never used         no-unused-vars
+   21:5   warning  'stp70' is assigned a value but never used         no-unused-vars
+   25:5   warning  'stp49' is assigned a value but never used         no-unused-vars
+   26:5   warning  'stp2_section' is assigned a value but never used  no-unused-vars
+   60:9   warning  'pipette2' is not defined                          no-undef
+  138:11  warning  'xPercent' is assigned a value but never used      no-unused-vars
+  139:11  warning  'yPercent' is assigned a value but never used      no-unused-vars
+
+/home/runner/work/exp-platform-tests-milk-iitk/exp-platform-tests-milk-iitk/experiment/simulation/script/step1_cob.js
+   14:7   warning  'milk_sample_a_45ml' is assigned a value but never used  no-unused-vars
+   15:7   warning  'milk_sample_b_45ml' is assigned a value but never used  no-unused-vars
+   16:7   warning  'milk_sample_c_45ml' is assigned a value but never used  no-unused-vars
+   17:7   warning  'milk_sample_d_45ml' is assigned a value but never used  no-unused-vars
+   37:7   warning  'test_tube_a' is assigned a value but never used         no-unused-vars
+   44:7   warning  'upOnSwitch3' is assigned a value but never used         no-unused-vars
+   46:7   warning  'downSwitch3' is assigned a value but never used         no-unused-vars
+   52:7   warning  'a_cob_test' is assigned a value but never used          no-unused-vars
+   53:7   warning  'b_cob_test' is assigned a value but never used          no-unused-vars
+   54:7   warning  'c_cob_test' is assigned a value but never used          no-unused-vars
+   55:7   warning  'd_cob_test' is assigned a value but never used          no-unused-vars
+   57:7   warning  'a_quality' is assigned a value but never used           no-unused-vars
+   58:7   warning  'b_quality' is assigned a value but never used           no-unused-vars
+   59:7   warning  'c_quality' is assigned a value but never used           no-unused-vars
+   60:7   warning  'd_quality' is assigned a value but never used           no-unused-vars
+   62:7   warning  'a_texture' is assigned a value but never used           no-unused-vars
+   63:7   warning  'b_texture' is assigned a value but never used           no-unused-vars
+   64:7   warning  'c_texture' is assigned a value but never used           no-unused-vars
+   65:7   warning  'd_texture' is assigned a value but never used           no-unused-vars
+   67:7   warning  'a_color' is assigned a value but never used             no-unused-vars
+   68:7   warning  'b_color' is assigned a value but never used             no-unused-vars
+   69:7   warning  'c_color' is assigned a value but never used             no-unused-vars
+   70:7   warning  'd_color' is assigned a value but never used             no-unused-vars
+   74:7   warning  'homeBtn' is assigned a value but never used             no-unused-vars
+   79:1   warning  'f' is not defined                                       no-undef
+   82:9   warning  'f' is not defined                                       no-undef
+   83:9   warning  'f' is not defined                                       no-undef
+  108:20  warning  'f' is not defined                                       no-undef
+  109:17  warning  'f' is not defined                                       no-undef
+  125:32  warning  'test_tube_a_cob' is not defined                         no-undef
+  134:46  warning  'f' is not defined                                       no-undef
+  135:17  warning  'f' is not defined                                       no-undef
+  178:67  warning  'f' is not defined                                       no-undef
+  179:17  warning  'f' is not defined                                       no-undef
+  216:91  warning  'f' is not defined                                       no-undef
+  217:17  warning  'f' is not defined                                       no-undef
+  258:42  warning  'startbutton' is not defined                             no-undef
+  259:42  warning  'startbutton' is not defined                             no-undef
+  260:42  warning  'ins' is not defined                                     no-undef
+  261:42  warning  'f' is not defined                                       no-undef
+  324:31  warning  Unnecessary semicolon                                    no-extra-semi
+  328:10  warning  'tubewaterbath' is defined but never used                no-unused-vars
+  329:4   warning  'ins' is not defined                                     no-undef
+  340:5   warning  'countdownInterval' is defined but never used            no-unused-vars
+  345:1   warning  'setTempDisplay3' is not defined                         no-undef
+  346:1   warning  'actualTempDisplay3' is not defined                      no-undef
+  347:1   warning  'sampleTempDisplay3' is not defined                      no-undef
+  359:3   warning  'f' is not defined                                       no-undef
+  360:3   warning  'ins' is not defined                                     no-undef
+  362:9   warning  'f' is not defined                                       no-undef
+  363:9   warning  'f' is not defined                                       no-undef
+  372:5   warning  'setTempDisplay3' is not defined                         no-undef
+  373:5   warning  'setTempDisplay3' is not defined                         no-undef
+  374:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  375:5   warning  'sampleTempDisplay3' is not defined                      no-undef
+  378:5   warning  'setTempDisplay3' is not defined                         no-undef
+  379:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  380:5   warning  'sampleTempDisplay3' is not defined                      no-undef
+  382:5   warning  'ins' is not defined                                     no-undef
+  387:9   warning  'f' is not defined                                       no-undef
+  390:9   warning  'ins' is not defined                                     no-undef
+  391:9   warning  'sampleTempDisplay3' is not defined                      no-undef
+  395:13  warning  'f' is not defined                                       no-undef
+  397:13  warning  'ins' is not defined                                     no-undef
+  398:13  warning  'setOff3' is not defined                                 no-undef
+  399:22  warning  'setOff3' is not defined                                 no-undef
+  402:13  warning  'f' is not defined                                       no-undef
+  420:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  426:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  429:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  435:8   warning  'timerDisplay13' is not defined                          no-undef
+  436:13  warning  'min' is assigned a value but never used                 no-unused-vars
+  437:13  warning  'sec' is assigned a value but never used                 no-unused-vars
+  444:13  warning  'timerDisplay13' is not defined                          no-undef
+  445:13  warning  'ins' is not defined                                     no-undef
+  446:19  warning  'ins' is not defined                                     no-undef
+  454:9   warning  'f' is not defined                                       no-undef
+  456:9   warning  'f' is not defined                                       no-undef
+  549:5   warning  'actualTempDisplay3' is not defined                      no-undef
+  556:11  warning  'actualTempDisplay3' is not defined                      no-undef
+  559:13  warning  'actualTempDisplay3' is not defined                      no-undef
+  565:8   warning  'timerDisplay13' is not defined                          no-undef
+  568:9   warning  'timerDisplay13' is not defined                          no-undef
+  569:11  warning  'ins' is not defined                                     no-undef
+  575:13  warning  'timerDisplay13' is not defined                          no-undef
+  576:13  warning  'ins' is not defined                                     no-undef
+  578:19  warning  'ins' is not defined                                     no-undef
+  579:13  warning  'f' is not defined                                       no-undef
+  586:9   warning  'f' is not defined                                       no-undef
+  588:9   warning  'f' is not defined                                       no-undef
+  652:34  warning  'ins' is not defined                                     no-undef
+  655:33  warning  'stp49' is not defined                                   no-undef
+  656:33  warning  'stp49' is not defined                                   no-undef
+  660:34  warning  'ins' is not defined                                     no-undef
+  686:10  warning  'observeB' is defined but never used                     no-unused-vars
+  687:6   warning  'f' is not defined                                       no-undef
+  688:5   warning  'f' is not defined                                       no-undef
+  689:5   warning  'ins' is not defined                                     no-undef
+  696:51  warning  'f' is not defined                                       no-undef
+  699:10  warning  'observeC' is defined but never used                     no-unused-vars
+  700:6   warning  'f' is not defined                                       no-undef
+  701:5   warning  'f' is not defined                                       no-undef
+  702:5   warning  'ins' is not defined                                     no-undef
+  708:10  warning  'observeD' is defined but never used                     no-unused-vars
+  709:6   warning  'f' is not defined                                       no-undef
+  710:5   warning  'f' is not defined                                       no-undef
+  711:5   warning  'ins' is not defined                                     no-undef
+  729:7   warning  'f' is not defined                                       no-undef
+  765:8   warning  'f' is not defined                                       no-undef
+  767:8   warning  'f' is not defined                                       no-undef
+  768:5   warning  'f' is not defined                                       no-undef
+  770:5   warning  'ins' is not defined                                     no-undef
+  771:54  warning  'f' is not defined                                       no-undef
+  783:82  warning  'f' is not defined                                       no-undef
+  786:14  warning  'observeA' is defined but never used                     no-unused-vars
+  787:6   warning  'f' is not defined                                       no-undef
+  788:5   warning  'f' is not defined                                       no-undef
+  795:7   warning  'f' is not defined                                       no-undef
+  823:7   warning  'f' is not defined                                       no-undef
+  825:7   warning  'ins' is not defined                                     no-undef
+  838:82  warning  'f' is not defined                                       no-undef
+  842:7   warning  'f' is not defined                                       no-undef
+  883:7   warning  'f' is not defined                                       no-undef
+  895:82  warning  'f' is not defined                                       no-undef
+  899:7   warning  'f' is not defined                                       no-undef
+  926:7   warning  'f' is not defined                                       no-undef
+  928:7   warning  'ins' is not defined                                     no-undef
+  933:7   warning  'stp16' is not defined                                   no-undef
+  934:3   warning  'stp16' is not defined                                   no-undef
+  935:3   warning  'stp15' is not defined                                   no-undef
+  949:82  warning  'f' is not defined                                       no-undef
+  954:10  warning  'showInference' is defined but never used                no-unused-vars
+  955:6   warning  'f' is not defined                                       no-undef
+  958:37  warning  'f' is not defined                                       no-undef
+
+/home/runner/work/exp-platform-tests-milk-iitk/exp-platform-tests-milk-iitk/experiment/simulation/script/step1_mbrt.js
+     5:7    warning  'settimerDisplay' is assigned a value but never used                 no-unused-vars
+     6:7    warning  'actualTimerDisplay' is assigned a value but never used              no-unused-vars
+     7:7    warning  'sampletimerDisplay' is assigned a value but never used              no-unused-vars
+     9:7    warning  'sampletimerDisplay1' is assigned a value but never used             no-unused-vars
+    10:7    warning  'sampletimerDisplay2' is assigned a value but never used             no-unused-vars
+    27:8    warning  'time_A' is assigned a value but never used                          no-unused-vars
+    28:8    warning  'quality_A' is assigned a value but never used                       no-unused-vars
+    42:7    warning  'pipette_centrifuge2' is assigned a value but never used             no-unused-vars
+    44:7    warning  'milk_a_2_50ml' is assigned a value but never used                   no-unused-vars
+    46:7    warning  'milk_tube_b_2' is assigned a value but never used                   no-unused-vars
+    47:7    warning  'milk_tube_c_2' is assigned a value but never used                   no-unused-vars
+    48:7    warning  'milk_tube_d_2' is assigned a value but never used                   no-unused-vars
+    50:7    warning  'milk_strip_a_2' is assigned a value but never used                  no-unused-vars
+    51:7    warning  'milk_10ml_b' is assigned a value but never used                     no-unused-vars
+    53:7    warning  'milk_10ml_c' is assigned a value but never used                     no-unused-vars
+    55:7    warning  'milk_10ml_a' is assigned a value but never used                     no-unused-vars
+    55:21   warning  'docuhment' is not defined                                           no-undef
+    56:7    warning  'milk_b_2_50ml' is assigned a value but never used                   no-unused-vars
+    57:7    warning  'milk_c_2_50ml' is assigned a value but never used                   no-unused-vars
+    58:7    warning  'milk_d_2_50ml' is assigned a value but never used                   no-unused-vars
+    60:7    warning  'milk_strip_b_2' is assigned a value but never used                  no-unused-vars
+    61:7    warning  'milk_strip_c_2' is assigned a value but never used                  no-unused-vars
+    62:7    warning  'milk_strip_d_2' is assigned a value but never used                  no-unused-vars
+    64:7    warning  'methylene_blue_1ml' is assigned a value but never used              no-unused-vars
+    65:7    warning  'methylene_mid_blue' is assigned a value but never used              no-unused-vars
+    66:7    warning  'methylene_mid_blue_b' is assigned a value but never used            no-unused-vars
+    67:7    warning  'methylene_blue_tube' is assigned a value but never used             no-unused-vars
+    68:7    warning  'methylene_blue_tube_b' is assigned a value but never used           no-unused-vars
+    69:7    warning  'methylene_blue_tube_c' is assigned a value but never used           no-unused-vars
+    70:7    warning  'methylene_blue_tube_d' is assigned a value but never used           no-unused-vars
+    72:7    warning  'methylene_blue_drop1' is assigned a value but never used            no-unused-vars
+    73:7    warning  'methylene_blue_drop2' is assigned a value but never used            no-unused-vars
+    74:7    warning  'methylene_blue_drop3' is assigned a value but never used            no-unused-vars
+    75:7    warning  'methylene_blue_drop4' is assigned a value but never used            no-unused-vars
+    76:7    warning  'methylene_blue_drop5' is assigned a value but never used            no-unused-vars
+    77:7    warning  'methylene_blue_drop6' is assigned a value but never used            no-unused-vars
+    79:7    warning  'methylene_blue_1ml_b' is assigned a value but never used            no-unused-vars
+    80:7    warning  'methylene_blue_1ml_c' is assigned a value but never used            no-unused-vars
+    81:7    warning  'methylene_blue_1ml_d' is assigned a value but never used            no-unused-vars
+    82:7    warning  'methylene_blue_drop1_b' is assigned a value but never used          no-unused-vars
+    83:7    warning  'methylene_blue_drop2_b' is assigned a value but never used          no-unused-vars
+    85:5    warning  'stp99' is assigned a value but never used                           no-unused-vars
+    88:7    warning  'onSwitchHolder2' is assigned a value but never used                 no-unused-vars
+    91:7    warning  'setButtonHolder2' is assigned a value but never used                no-unused-vars
+    92:7    warning  'downOnSwitch2' is assigned a value but never used                   no-unused-vars
+    95:7    warning  'downSwitch2' is assigned a value but never used                     no-unused-vars
+    96:7    warning  'offSwitch2' is assigned a value but never used                      no-unused-vars
+    97:7    warning  'onSwitch2' is assigned a value but never used                       no-unused-vars
+    98:7    warning  'waterbath2' is assigned a value but never used                      no-unused-vars
+   100:7    warning  'butyrometer2' is assigned a value but never used                    no-unused-vars
+   101:7    warning  'tilted_butyrometer3' is assigned a value but never used             no-unused-vars
+   102:7    warning  'straight_butyrometer3' is assigned a value but never used           no-unused-vars
+   103:7    warning  'cap3' is assigned a value but never used                            no-unused-vars
+   106:7    warning  'setTempDisplay2' is assigned a value but never used                 no-unused-vars
+   109:7    warning  'timerDisplay2' is assigned a value but never used                   no-unused-vars
+   112:7    warning  'timerDisplay22' is assigned a value but never used                  no-unused-vars
+   114:7    warning  'tiltedsol12' is assigned a value but never used                     no-unused-vars
+   116:7    warning  'sampleTempDisplay12' is assigned a value but never used             no-unused-vars
+   117:7    warning  'actualTempDisplay12' is assigned a value but never used             no-unused-vars
+   118:7    warning  'tube_cap_a' is assigned a value but never used                      no-unused-vars
+   119:7    warning  'tube_cap_c' is assigned a value but never used                      no-unused-vars
+   120:7    warning  'tube_cap_d' is assigned a value but never used                      no-unused-vars
+   122:7    warning  'tube_cap_A' is assigned a value but never used                      no-unused-vars
+   124:7    warning  'tube_cap_b' is assigned a value but never used                      no-unused-vars
+   126:7    warning  'test_tube_a_2' is assigned a value but never used                   no-unused-vars
+   129:7    warning  'tongs_upper' is assigned a value but never used                     no-unused-vars
+   130:7    warning  'tongs_down' is assigned a value but never used                      no-unused-vars
+   134:7    warning  'closed_methylene_blue_tube_a_2' is assigned a value but never used  no-unused-vars
+   136:7    warning  'closed_methylene_blue_tube_b_2' is assigned a value but never used  no-unused-vars
+   138:7    warning  'closed_white_tube_a' is assigned a value but never used             no-unused-vars
+   139:7    warning  'closed_white_tube_b' is assigned a value but never used             no-unused-vars
+   142:7    warning  'tilted_light_blue_tube' is assigned a value but never used          no-unused-vars
+   146:7    warning  'inverted_methylene_blue_tube_a' is assigned a value but never used  no-unused-vars
+   147:7    warning  'inverted_methylene_blue_tube_b' is assigned a value but never used  no-unused-vars
+   149:7    warning  'tongs_A' is assigned a value but never used                         no-unused-vars
+   154:7    warning  'tongs_upper3' is assigned a value but never used                    no-unused-vars
+   155:7    warning  'tongs_down3' is assigned a value but never used                     no-unused-vars
+   157:7    warning  'tongs_upper4' is assigned a value but never used                    no-unused-vars
+   158:7    warning  'tongs_down4' is assigned a value but never used                     no-unused-vars
+   200:5    warning  'f' is not defined                                                   no-undef
+   217:8    warning  'ins' is not defined                                                 no-undef
+   226:12   warning  'f' is not defined                                                   no-undef
+   226:21   warning  'ins' is not defined                                                 no-undef
+   231:6    warning  'f' is not defined                                                   no-undef
+   232:7    warning  'f' is not defined                                                   no-undef
+   237:5    warning  'ins' is not defined                                                 no-undef
+   241:9    warning  'currentTime' is assigned a value but never used                     no-unused-vars
+   250:9    warning  'timecomplete' is assigned a value but never used                    no-unused-vars
+   261:3    warning  'ins' is not defined                                                 no-undef
+   264:18   warning  'ins' is not defined                                                 no-undef
+   268:23   warning  'ins' is not defined                                                 no-undef
+   269:23   warning  'f' is not defined                                                   no-undef
+   270:93   warning  'f' is not defined                                                   no-undef
+   272:20   warning  'tongs' is not defined                                               no-undef
+   277:22   warning  'ins' is not defined                                                 no-undef
+   288:31   warning  'f' is not defined                                                   no-undef
+   293:11   warning  'startFastCountdown' is defined but never used                       no-unused-vars
+   293:30   warning  'onFinish' is defined but never used                                 no-unused-vars
+   294:7    warning  'f' is not defined                                                   no-undef
+   295:5    warning  'f' is not defined                                                   no-undef
+   328:9    warning  'f' is not defined                                                   no-undef
+   329:9    warning  'onFinished' is not defined                                          no-undef
+   341:13   warning  'startFastCountdown2' is defined but never used                      no-unused-vars
+   342:7    warning  'f' is not defined                                                   no-undef
+   343:5    warning  'f' is not defined                                                   no-undef
+   377:9    warning  'f' is not defined                                                   no-undef
+   388:8    warning  'ins' is not defined                                                 no-undef
+   391:11   warning  'f' is not defined                                                   no-undef
+   392:5    warning  'f' is not defined                                                   no-undef
+   404:18   warning  'ins' is not defined                                                 no-undef
+   406:21   warning  'ins' is not defined                                                 no-undef
+   424:26   warning  'f' is not defined                                                   no-undef
+   453:7    warning  'f' is not defined                                                   no-undef
+   454:5    warning  'f' is not defined                                                   no-undef
+   489:9    warning  'f' is not defined                                                   no-undef
+   490:9    warning  'onFinished3' is not defined                                         no-undef
+   503:7    warning  'f' is not defined                                                   no-undef
+   504:5    warning  'f' is not defined                                                   no-undef
+   509:5    warning  'tube_cap_a' is not defined                                          no-undef
+   510:5    warning  'tube_cap_b' is not defined                                          no-undef
+   512:5    warning  'pipette_centrifuge2' is not defined                                 no-undef
+   514:7    warning  'pipette_centrifuge2' is not defined                                 no-undef
+   517:9    warning  'pipette_centrifuge2' is not defined                                 no-undef
+   520:11   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   523:13   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   527:15   warning  'milk_a_2_50ml' is not defined                                       no-undef
+   528:15   warning  'milk_10ml_a' is not defined                                         no-undef
+   531:17   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   532:17   warning  'milk_10ml_a' is not defined                                         no-undef
+   535:19   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   536:19   warning  'milk_10ml_a' is not defined                                         no-undef
+   539:21   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   540:21   warning  'milk_10ml_a' is not defined                                         no-undef
+   543:23   warning  'milk_strip_a_2' is not defined                                      no-undef
+   548:25   warning  'test_tube_a_2' is not defined                                       no-undef
+   550:27   warning  'milk_strip_a_2' is not defined                                      no-undef
+   551:27   warning  'milk_10ml_a' is not defined                                         no-undef
+   554:29   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   555:29   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   558:31   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   560:31   warning  'f' is not defined                                                   no-undef
+   561:31   warning  'f' is not defined                                                   no-undef
+   564:33   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   567:35   warning  'milk_10ml_b' is not defined                                         no-undef
+   568:35   warning  'milk_b_2_50ml' is not defined                                       no-undef
+   571:37   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   572:37   warning  'milk_10ml_b' is not defined                                         no-undef
+   575:39   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   576:39   warning  'milk_10ml_b' is not defined                                         no-undef
+   579:41   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   580:41   warning  'milk_10ml_b' is not defined                                         no-undef
+   583:43   warning  'milk_strip_b_2' is not defined                                      no-undef
+   587:52   warning  'test_tube_b_2' is not defined                                       no-undef
+   590:47   warning  'milk_10ml_b' is not defined                                         no-undef
+   591:47   warning  'milk_strip_b_2' is not defined                                      no-undef
+   592:47   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   595:49   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   596:49   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   599:51   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   602:53   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   605:55   warning  'milk_10ml_c' is not defined                                         no-undef
+   606:55   warning  'milk_c_2_50ml' is not defined                                       no-undef
+   609:57   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   610:57   warning  'milk_10ml_c' is not defined                                         no-undef
+   612:61   warning  'f' is not defined                                                   no-undef
+   613:59   warning  'f' is not defined                                                   no-undef
+   616:61   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   617:61   warning  'milk_10ml_c' is not defined                                         no-undef
+   620:63   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   621:63   warning  'milk_10ml_c' is not defined                                         no-undef
+   624:65   warning  'milk_10ml_c' is not defined                                         no-undef
+   625:65   warning  'milk_strip_c_2' is not defined                                      no-undef
+   626:65   warning  'milk_tube_c_2' is not defined                                       no-undef
+   627:77   warning  'test_tube_c' is not defined                                         no-undef
+   630:67   warning  'milk_strip_c_2' is not defined                                      no-undef
+   633:69   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   636:71   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   639:73   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   642:75   warning  'milk_10ml_d' is not defined                                         no-undef
+   643:75   warning  'milk_d_2_50ml' is not defined                                       no-undef
+   646:77   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   647:77   warning  'milk_10ml_d' is not defined                                         no-undef
+   650:79   warning  'milk_10ml_d' is not defined                                         no-undef
+   651:79   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   654:81   warning  'milk_10ml_d' is not defined                                         no-undef
+   655:81   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   658:83   warning  'milk_10ml_d' is not defined                                         no-undef
+   659:83   warning  'milk_strip_d_2' is not defined                                      no-undef
+   660:83   warning  'milk_tube_d_2' is not defined                                       no-undef
+   661:93   warning  'test_tube_d' is not defined                                         no-undef
+   665:85   warning  'milk_strip_d_2' is not defined                                      no-undef
+   666:85   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   667:85   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   670:87   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   671:87   warning  'f' is not defined                                                   no-undef
+   674:89   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   675:89   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   676:96   warning  'ins' is not defined                                                 no-undef
+   677:89   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   678:95   warning  'f' is not defined                                                   no-undef
+   679:93   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   680:93   warning  'pipette_centrifuge2' is not defined                                 no-undef
+   682:100  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   684:107  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   686:101  warning  'methylene_blue_1ml' is not defined                                  no-undef
+   688:103  warning  'methylene_blue_1ml' is not defined                                  no-undef
+   689:103  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   691:105  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   692:104  warning  'methylene_blue_1ml' is not defined                                  no-undef
+   694:109  warning  'methylene_blue_1ml' is not defined                                  no-undef
+   695:110  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   697:113  warning  'methylene_blue_drop2' is not defined                                no-undef
+   698:113  warning  'methylene_blue_drop1' is not defined                                no-undef
+   700:115  warning  'methylene_blue_drop2' is not defined                                no-undef
+   701:118  warning  'methylene_blue_tube' is not defined                                 no-undef
+   702:118  warning  'methylene_blue_1ml' is not defined                                  no-undef
+   707:119  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   709:123  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   711:127  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   713:127  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   714:129  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   716:132  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   717:110  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   719:115  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   720:104  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   722:117  warning  'methylene_blue_drop3' is not defined                                no-undef
+   723:117  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   725:119  warning  'methylene_blue_tube_b' is not defined                               no-undef
+   729:131  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   731:131  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   732:131  warning  'methylene_blue_1ml_b' is not defined                                no-undef
+   733:131  warning  'methylene_blue_drop3' is not defined                                no-undef
+   735:137  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   737:143  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   739:145  warning  'methylene_blue_1ml_c' is not defined                                no-undef
+   740:145  warning  'methylene_blue_1ml_c' is not defined                                no-undef
+   741:145  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   743:149  warning  'methylene_blue_1ml_c' is not defined                                no-undef
+   744:149  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   746:153  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   747:153  warning  'methylene_blue_1ml_c' is not defined                                no-undef
+   750:167  warning  'methylene_blue_drop4' is not defined                                no-undef
+   753:170  warning  'methylene_blue_tube_c' is not defined                               no-undef
+   754:170  warning  'methylene_blue_1ml_c' is not defined                                no-undef
+   756:171  warning  'milk_tube_c_2' is not defined                                       no-undef
+   757:171  warning  'methylene_blue_drop4' is not defined                                no-undef
+   759:173  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   761:188  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   763:195  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   765:201  warning  'methylene_blue_1ml_d' is not defined                                no-undef
+   766:201  warning  'methylene_blue_1ml_d' is not defined                                no-undef
+   767:201  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   769:207  warning  'methylene_blue_1ml_d' is not defined                                no-undef
+   770:201  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   772:209  warning  'methylene_blue_1ml_d' is not defined                                no-undef
+   773:201  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   776:201  warning  'methylene_blue_drop5' is not defined                                no-undef
+   778:205  warning  'methylene_blue_tube_d' is not defined                               no-undef
+   779:205  warning  'methylene_blue_1ml_d' is not defined                                no-undef
+   781:209  warning  'milk_tube_d_2' is not defined                                       no-undef
+   782:209  warning  'methylene_blue_drop5' is not defined                                no-undef
+   783:209  warning  'methylene_blue_drop5' is not defined                                no-undef
+   785:211  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   787:213  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   789:214  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   790:214  warning  'pipette_centrifuge2' is not defined                                 no-undef
+   793:220  warning  'f' is not defined                                                   no-undef
+   794:221  warning  'ins' is not defined                                                 no-undef
+   923:1    warning  'tube_cap_a' is not defined                                          no-undef
+   924:7    warning  'f' is not defined                                                   no-undef
+   925:5    warning  'f' is not defined                                                   no-undef
+   926:5    warning  'tube_cap_a' is not defined                                          no-undef
+   928:9    warning  'tube_cap_a' is not defined                                          no-undef
+   930:13   warning  'tube_cap_a' is not defined                                          no-undef
+   932:19   warning  'tube_cap_b' is not defined                                          no-undef
+   934:24   warning  'tube_cap_b' is not defined                                          no-undef
+   936:31   warning  'tube_cap_b' is not defined                                          no-undef
+   938:31   warning  'test_tube_a_2' is not defined                                       no-undef
+   939:31   warning  'tube_cap_a' is not defined                                          no-undef
+   940:31   warning  'methylene_blue_tube' is not defined                                 no-undef
+   942:29   warning  'tube_cap_c' is not defined                                          no-undef
+   944:31   warning  'tube_cap_c' is not defined                                          no-undef
+   946:33   warning  'tube_cap_c' is not defined                                          no-undef
+   948:31   warning  'test_tube_b_2' is not defined                                       no-undef
+   949:31   warning  'tube_cap_b' is not defined                                          no-undef
+   950:36   warning  'methylene_blue_tube_b' is not defined                               no-undef
+   952:37   warning  'tube_cap_d' is not defined                                          no-undef
+   954:41   warning  'tube_cap_d' is not defined                                          no-undef
+   956:45   warning  'tube_cap_d' is not defined                                          no-undef
+   958:31   warning  'test_tube_c' is not defined                                         no-undef
+   959:31   warning  'tube_cap_c' is not defined                                          no-undef
+   960:36   warning  'methylene_blue_tube_c' is not defined                               no-undef
+   961:31   warning  'startbutton' is not defined                                         no-undef
+   964:31   warning  'test_tube_d' is not defined                                         no-undef
+   965:31   warning  'tube_cap_d' is not defined                                          no-undef
+   966:36   warning  'methylene_blue_tube_d' is not defined                               no-undef
+   968:21   warning  'f' is not defined                                                   no-undef
+   969:21   warning  'ins' is not defined                                                 no-undef
+   970:21   warning  'startbutton' is not defined                                         no-undef
+   983:57   warning  'f' is not defined                                                   no-undef
+  1002:1    warning  'offSwitch2' is not defined                                          no-undef
+  1003:6    warning  'f' is not defined                                                   no-undef
+  1004:5    warning  'f' is not defined                                                   no-undef
+  1006:11   warning  'onSwitch2' is not defined                                           no-undef
+  1007:5    warning  'onSwitch2' is not defined                                           no-undef
+  1008:5    warning  'offSwitch2' is not defined                                          no-undef
+  1010:5    warning  'onSwitch2' is not defined                                           no-undef
+  1012:9    warning  'onSwitch2' is not defined                                           no-undef
+  1016:5    warning  'setTempDisplay2' is not defined                                     no-undef
+  1017:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1018:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1020:11   warning  'actualTempDisplay2' is not defined                                  no-undef
+  1030:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1033:5    warning  'ins' is not defined                                                 no-undef
+  1034:61   warning  'f' is not defined                                                   no-undef
+  1037:1    warning  'upOffSwitch2' is not defined                                        no-undef
+  1038:9    warning  'f' is not defined                                                   no-undef
+  1041:9    warning  'ins' is not defined                                                 no-undef
+  1043:15   warning  'upOffSwitch2' is not defined                                        no-undef
+  1046:13   warning  'f' is not defined                                                   no-undef
+  1048:13   warning  'ins' is not defined                                                 no-undef
+  1049:11   warning  'setOff2' is not defined                                             no-undef
+  1050:11   warning  'setOff2' is not defined                                             no-undef
+  1057:9    warning  'bathReadyForHolding' is not defined                                 no-undef
+  1058:9    warning  'ins' is not defined                                                 no-undef
+  1059:15   warning  'ins' is not defined                                                 no-undef
+  1060:9    warning  'f' is not defined                                                   no-undef
+  1070:33   warning  'actualTempDisplay2' is not defined                                  no-undef
+  1075:13   warning  'actualTempDisplay2' is not defined                                  no-undef
+  1078:13   warning  'actualTempDisplay2' is not defined                                  no-undef
+  1090:10   warning  'bathReadyForHolding' is not defined                                 no-undef
+  1092:5    warning  'bathReadyForHolding' is not defined                                 no-undef
+  1096:4    warning  'ins' is not defined                                                 no-undef
+  1103:8    warning  'f' is not defined                                                   no-undef
+  1105:3    warning  'stp39' is not defined                                               no-undef
+  1107:3    warning  'test_tube_b_2' is not defined                                       no-undef
+  1108:23   warning  'test_tube_c_2' is not defined                                       no-undef
+  1109:23   warning  'test_tube_d_2' is not defined                                       no-undef
+  1123:39   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1126:19   warning  'tube_cap_b' is not defined                                          no-undef
+  1127:19   warning  'test_tube_a_2' is not defined                                       no-undef
+  1131:20   warning  'f' is not defined                                                   no-undef
+  1137:14   warning  'f' is not defined                                                   no-undef
+  1138:9    warning  'f' is not defined                                                   no-undef
+  1155:39   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1157:41   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1161:43   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1165:45   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1167:47   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1172:45   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1176:45   warning  'inverted_methylene_blue_tube_a' is not defined                      no-undef
+  1192:39   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1194:73   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1197:78   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1201:45   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1203:75   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1207:45   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1209:53   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1225:39   warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1227:90   warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1230:97   warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1234:45   warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1236:108  warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1240:45   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1242:50   warning  'inverted_methylene_blue_tube_b' is not defined                      no-undef
+  1245:54   warning  'inverted_methylene_blue_tube_c' is not defined                      no-undef
+  1260:127  warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1262:79   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1265:81   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1269:45   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1271:89   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1275:45   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1277:89   warning  'inverted_methylene_blue_tube_d' is not defined                      no-undef
+  1285:35   warning  'f' is not defined                                                   no-undef
+  1350:72   warning  'f' is not defined                                                   no-undef
+  1357:5    warning  'countdownInterval' is defined but never used                        no-unused-vars
+  1360:1    warning  'onSwitch2' is not defined                                           no-undef
+  1362:1    warning  'onSwitch2' is not defined                                           no-undef
+  1364:1    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1376:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1391:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1394:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1400:13   warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1401:13   warning  'ins' is not defined                                                 no-undef
+  1402:13   warning  'f' is not defined                                                   no-undef
+  1405:19   warning  'ins' is not defined                                                 no-undef
+  1414:10   warning  'observeA_mbrt' is defined but never used                            no-unused-vars
+  1415:6    warning  'f' is not defined                                                   no-undef
+  1416:5    warning  'f' is not defined                                                   no-undef
+  1422:10   warning  'observeB_mbrt' is defined but never used                            no-unused-vars
+  1423:6    warning  'f' is not defined                                                   no-undef
+  1424:5    warning  'f' is not defined                                                   no-undef
+  1427:12   warning  'f' is not defined                                                   no-undef
+  1428:6    warning  'f' is not defined                                                   no-undef
+  1432:46   warning  'f' is not defined                                                   no-undef
+  1435:10   warning  'observeC_mbrt' is defined but never used                            no-unused-vars
+  1436:6    warning  'f' is not defined                                                   no-undef
+  1437:5    warning  'f' is not defined                                                   no-undef
+  1440:12   warning  'f' is not defined                                                   no-undef
+  1441:8    warning  'f' is not defined                                                   no-undef
+  1443:12   warning  'f' is not defined                                                   no-undef
+  1444:5    warning  'f' is not defined                                                   no-undef
+  1446:47   warning  'f' is not defined                                                   no-undef
+  1449:10   warning  'observeD_mbrt' is defined but never used                            no-unused-vars
+  1450:6    warning  'f' is not defined                                                   no-undef
+  1451:5    warning  'f' is not defined                                                   no-undef
+  1454:12   warning  'f' is not defined                                                   no-undef
+  1455:8    warning  'f' is not defined                                                   no-undef
+  1457:12   warning  'f' is not defined                                                   no-undef
+  1458:6    warning  'f' is not defined                                                   no-undef
+  1460:12   warning  'f' is not defined                                                   no-undef
+  1461:5    warning  'f' is not defined                                                   no-undef
+  1465:47   warning  'f' is not defined                                                   no-undef
+  1474:8    warning  'f' is not defined                                                   no-undef
+  1475:7    warning  'f' is not defined                                                   no-undef
+  1484:9    warning  'ins' is not defined                                                 no-undef
+  1496:19   warning  'f' is not defined                                                   no-undef
+  1505:50   warning  'f' is not defined                                                   no-undef
+  1510:8    warning  'f' is not defined                                                   no-undef
+  1511:7    warning  'f' is not defined                                                   no-undef
+  1523:9    warning  'ins' is not defined                                                 no-undef
+  1535:19   warning  'f' is not defined                                                   no-undef
+  1536:19   warning  'ins' is not defined                                                 no-undef
+  1544:40   warning  'f' is not defined                                                   no-undef
+  1548:8    warning  'f' is not defined                                                   no-undef
+  1549:7    warning  'f' is not defined                                                   no-undef
+  1564:9    warning  'ins' is not defined                                                 no-undef
+  1576:19   warning  'f' is not defined                                                   no-undef
+  1577:19   warning  'ins' is not defined                                                 no-undef
+  1585:41   warning  'f' is not defined                                                   no-undef
+  1591:8    warning  'f' is not defined                                                   no-undef
+  1592:7    warning  'f' is not defined                                                   no-undef
+  1604:9    warning  'ins' is not defined                                                 no-undef
+  1617:19   warning  'f' is not defined                                                   no-undef
+  1618:19   warning  'ins' is not defined                                                 no-undef
+  1627:53   warning  'f' is not defined                                                   no-undef
+  1633:8    warning  'f' is not defined                                                   no-undef
+  1634:7    warning  'f' is not defined                                                   no-undef
+  1647:9    warning  'ins' is not defined                                                 no-undef
+  1659:19   warning  'f' is not defined                                                   no-undef
+  1660:19   warning  'ins' is not defined                                                 no-undef
+  1667:41   warning  'f' is not defined                                                   no-undef
+  1671:8    warning  'f' is not defined                                                   no-undef
+  1672:10   warning  'f' is not defined                                                   no-undef
+  1687:9    warning  'ins' is not defined                                                 no-undef
+  1699:19   warning  'f' is not defined                                                   no-undef
+  1700:19   warning  'ins' is not defined                                                 no-undef
+  1708:53   warning  'f' is not defined                                                   no-undef
+  1712:8    warning  'f' is not defined                                                   no-undef
+  1713:8    warning  'f' is not defined                                                   no-undef
+  1725:9    warning  'ins' is not defined                                                 no-undef
+  1740:19   warning  'f' is not defined                                                   no-undef
+  1741:19   warning  'ins' is not defined                                                 no-undef
+  1764:8    warning  'f' is not defined                                                   no-undef
+  1765:8    warning  'f' is not defined                                                   no-undef
+  1777:9    warning  'ins' is not defined                                                 no-undef
+  1790:19   warning  'f' is not defined                                                   no-undef
+  1791:19   warning  'ins' is not defined                                                 no-undef
+  1814:8    warning  'f' is not defined                                                   no-undef
+  1815:9    warning  'f' is not defined                                                   no-undef
+  1826:9    warning  'ins' is not defined                                                 no-undef
+  1840:19   warning  'ins' is not defined                                                 no-undef
+  1848:25   warning  'f' is not defined                                                   no-undef
+  1863:8    warning  'f' is not defined                                                   no-undef
+  1864:9    warning  'f' is not defined                                                   no-undef
+  1878:9    warning  'ins' is not defined                                                 no-undef
+  1890:19   warning  'f' is not defined                                                   no-undef
+  1891:19   warning  'ins' is not defined                                                 no-undef
+  1901:53   warning  'f' is not defined                                                   no-undef
+  1906:9    warning  'f' is not defined                                                   no-undef
+  1914:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1929:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1932:9    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1938:13   warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1939:13   warning  'ins' is not defined                                                 no-undef
+  1940:13   warning  'f' is not defined                                                   no-undef
+  1945:19   warning  'ins' is not defined                                                 no-undef
+  1948:48   warning  'f' is not defined                                                   no-undef
+  1953:9    warning  'f' is not defined                                                   no-undef
+  1960:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  1975:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1978:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1984:13   warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  1985:13   warning  'ins' is not defined                                                 no-undef
+  1986:13   warning  'f' is not defined                                                   no-undef
+  1992:19   warning  'ins' is not defined                                                 no-undef
+  1995:48   warning  'f' is not defined                                                   no-undef
+  1999:9    warning  'f' is not defined                                                   no-undef
+  2006:5    warning  'actualTempDisplay2' is not defined                                  no-undef
+  2021:8    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  2024:5    warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  2030:13   warning  'timerDisplay_mbrt' is not defined                                   no-undef
+  2031:13   warning  'ins' is not defined                                                 no-undef
+  2032:13   warning  'f' is not defined                                                   no-undef
+  2038:19   warning  'ins' is not defined                                                 no-undef
+  2041:48   warning  'f' is not defined                                                   no-undef
+  2049:6    warning  'f' is not defined                                                   no-undef
+  2050:5    warning  'ins' is not defined                                                 no-undef
+  2052:3    warning  'stp39' is not defined                                               no-undef
+  2053:3    warning  'stp18' is not defined                                               no-undef
+  2056:1    warning  'stp39' is not defined                                               no-undef
+  2058:4    warning  'stp17' is not defined                                               no-undef
+  2059:38   warning  'f' is not defined                                                   no-undef
+
+✖ 679 problems (0 errors, 679 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

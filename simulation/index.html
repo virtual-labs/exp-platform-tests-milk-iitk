@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Test of Milk</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f5f8fa;
+      font-family: "Poppins", sans-serif;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    header h1 {
+      font-size: clamp(1.3rem, 4vw, 2rem);
+      color: #2e7d32;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
+      color: #555;
+    }
+
+    /* -------- FIXED 2×2 GRID -------- */
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 1fr;     /* Always 2 per row */
+      gap: 15px;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: 0.25s ease;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      min-width: 0;              /* ⭐ Forces equal shrink */
+      aspect-ratio: 1 / 1;       /* ⭐ Keeps perfect equal box */
+      overflow: hidden;          /* ⭐ Prevents text overflow */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      background: #e8f5e9;
+    }
+
+    .card h3 {
+      font-size: clamp(0.9rem, 3vw, 1.1rem);
+      color: #2e7d32;
+      margin: 5px 0;
+    }
+
+    .card p {
+      font-size: clamp(0.7rem, 2.3vw, 0.9rem);
+      color: #666;
+      margin: 0;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.6;
+      background: #f0f0f0 !important;
+    }
+    .card {
+  text-decoration: none !important;
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🧪 Platform Test of Milk</h1>
+    <p>Select a test below to begin</p>
+  </header>
+
+  <main>
+    <div class="dashboard">
+
+      <a href="./cob-test.html" class="card">
+        <h3>🧪 COB Test</h3>
+        <p>Check milk stability and acidity.</p>
+      </a>
+
+      <a href="./mbrt-test.html" class="card">
+        <h3>🧫 MBRT Test</h3>
+        <p>Measure bacterial activity.</p>
+      </a>
+
+      <a class="card disabled">
+        <h3>🍶 Alcohol Test</h3>
+        <p>Coming soon…</p>
+      </a>
+
+      <a class="card disabled">
+        <h3>🧍 Sedimentation Test</h3>
+        <p>Coming soon…</p>
+      </a>
+
+    </div>
+  </main>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
