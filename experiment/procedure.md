@@ -1,23 +1,23 @@
-1A: COB Test<br>
-Requirements (Instruments, Chemicals & Other)<br>
-Milk sample<br>
-Test tubes<br>
-Water bath<br>
+<b>1A: COB Test :</b><br>
+<b>Requirements (Instruments, Chemicals & Other) :</b><br>
+1. Milk sample<br>
+2. Test tubes<br>
+3. Water bath<br>
 
-Procedure  <br>
+<b>Procedure :</b>  <br>
 1.	Take 5ml of milk from each sample in a separate test tube.<br>
 2.	Place the test tubes in a boiling water bath for 5 minutes. <br>
 3.	Remove the tube from water bath without shaking.<br>
 4.	Observation is No clot formation- Negative and Clot formation-Positive<br>
 
-1B: MBRT Test<br>
-Requirements (Instruments, Chemicals & Other)<br>
-Milk sample<br>
-Standard methylene blue solution<br>
-Test tubes<br>
-Water bath<br>
+<b>1B: MBRT Test :</b><br>
+<b>Requirements (Instruments, Chemicals & Other) :</b><br>
+1. Milk sample<br>
+2. Standard methylene blue solution<br>
+3. Test tubes<br>
+4. Water bath<br>
 
-Procedure  <br>
+<b>Procedure  :</b> <br>
 1.	Take 10 ml of milk from each sample and pour in a two separate test tube<br>
 2.	Add 1 ml of standard methylene blue solution in both the test tubes.<br>
 3.	Invert the test tube to mix the milk and methylene blue solution.<br>
